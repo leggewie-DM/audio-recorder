@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> 
+<html> 
+<head> 
+
+<style type="text/css" media="all">
+body {
+	font: 80% arial, helvetica, sans-serif;
+	margin: 2px;
+}
+
+h3 {
+    text-decoration:underline;
+}
+
+.command {
+    font: 100% courier;
+    font-weight:bold;
+}
+</style>
+
+<title>Timer commands</title> 
+<h1>Timer commands</h1>
+<img src="timer-syntax-1.png" alt=""/>
+</head>
+
+<body bgcolor=white> 
+<table border="0" width="800px">
+<tr>
+<td>
+
+<p>Timer commands can stop, start and pause recording on a given condition.</p>
+
+<p>The general syntax of the commands are</p>
+<p>
+<span class="command">
+start [at | if | after | on] condition</br>
+stop [at | if | after | on] condition</br>
+pause [at | if | after | on] condition</br>
+</span>
+</p>
+
+<p>The timer field can contain several commands and lines written in English. Press the [Save] button or CNTR + S keys to save the command text.
+Use <b>#</b> character to comment out unused lines.
+</p>
+
+<!-- ------------------------------ -->
+
+<h2>Conditions</h2>
+<h3>Clock time:</h3>
+<p>This can stop or start the recording at given clock time. The time has format hh:mm:ss (hours:minutes:seconds) and 
+you can either use the 24-hour clock or 12-hour notation with <b>am</b> or <b>pm</b> suffix (ending).
+</p>
+
+<p>These two timer commands will start recording at 09:30 pm.<br>
+<span class="command">
+start at 09:30 pm<br>
+start at 21:30<br>
+</span>
+
+<p>These commands will stop recording at 9 o'clock in the morning.<br>
+<span class="command">stop at 09:00<br>
+stop at 09:00 am<br>
+</p>
+
+<p>The time is valid once a day. The command will fire again next day.
+</p>
+
+<p>Note. Use the colon ":" to distinguish clock time (hh:mm::ss) from time period or duration.
+</p>
+
+<h3>Stop or pause recording on silence:</h3>
+<p>Use the <b>silence</b> word to stop or pause recording when there is no particular input on the line.
+You can also give the silence duration/delay in seconds and signal level in decibel (dB), percent (%) or plain numeric value.
+The default silence (delay) is 3 seconds and the default audio threshold is 0.3 (0.3 = 30% = ca. -24 dB).
+</p>
+
+<p>Notice: If you use the <b>silence</b> word to stop recording, the recording will automatically continue after the condition becomes false (untrue).
+</p>
+
+<p>Some examples<br>
+<span class="command">stop if silence<br>
+stop if silence 3s<br>
+stop if silence 3s 0.25<br>
+stop if silence 25% 4 seconds<br>
+</span>
+And <br>
+<span class="command">pause if silence 0.2<br>
+pause if silence 3s -32dB<br>
+
+</span>
+In these two cases the recording will <b>pause</b> when the average audio level falls below 20% (0.2) for 3 seconds time.
+The recording will automatically resume when the audio level rises over 20% threshold (over 0.2 or ca. -32dB).
+</p>
+
+<p>The time period/delay should be given in seconds, like<br>
+<ul>
+<li>3s.  (default value)
+<li>3 sec.
+<li>3 seconds.
+</ul>
+</p>
+
+<p>The audio threshold can be written in three ways:<br>
+<ul>
+<li>Value between 0 - 1.0, where 0 is total silence, and 1.0 is maximum audio volume.
+<li>Percent value 0 - 100%, where 100% equals to 1.0.<br>
+<li>Decibel (dB) value: audio level as RMS (Root Mean Square) decibel value. -150dB is approximately 0.0, and 0dB = 1.0.</p>
+</ul>
+
+<p>Value between 0 - 1.0 = exp(dB/20).<br>
+Value in dB = log(value) * 20.</p>
+
+
+<!-- ------------------------------ -->
+
+<h3>Activate recording on sound or voice:</h3>
+<p>Use the <b>sound</b>, <b>voice</b> or <b>audio</b> words to start recording when the audio level rises over a given threshold.
+All these three words mean the same thing.
+
+The default threshold for audio volume is 0.0, so a slightest whispering will trigger the recorder.
+The default duration is also 0. This means that the recorder will not wait, 
+but starts capturing immediately when the audio rises over the threshold limit.
+
+</p>
+
+<p>Examples<br>
+<span class="command">start if sound<br>
+start if sound 0.3<br>
+start if sound 30%<br>
+start if audio -24dB<br>
+</span>
+
+<p>The recording will automatically <b>pause</b> temporarily when audio drops under the threshold.</p>
+
+<p>Notice: The recorder cannot handle time delay in sound/audio/voice related commands well because it has no buffering capabilities. It will simply loose the audio during delay. Most often you should not give time delay for sound/audio/voice commands.
+Type only a threshold value. Study the above examples.
+</p>
+
+<p>Left-click the level-bar to change its value scale (%-scale from 0 - 100% or value from 0 to 1.0).</p>
+<p>Right-click the level-bar to change its form and style.</p>
+
+<img src="level-bar-1.png" alt=""/>
+<!-- ------------------------------ -->
+
+<h3>File size:</h3>
+<p>Stop or pause recording after certain file size. The file size must be an integer or decimal number.
+The size unit can be <b>bytes</b>, <b>kB</b>, <b>MB</b>, <b>GB</b> or <b>TB</b>.
+</p>
+
+<p>E.g this will stop recording when the file size reaches 500 KB.<br>
+<span class="command">stop if 500 kB<br>
+pause if 0.5MB<br>
+</span> 
+
+<p>This will stop recording after 2GB or 12:00 pm.<br>
+<span class="command">
+stop after 2 GB | 12 pm<br>
+</span> 
+</p>
+
+<h3>Time period:</h3>
+<p>Stop, start or pause recording after given time period. The period or duration has syntax #h #m #s.
+</p>
+
+<p>Eg. this command will stop recording after 1 hour 20 minutes and 15 seconds.<br>
+<span class="command">stop after 1h 20m 15s<br>
+</span>
+</p>
+
+<p>This will start recording after 22 minutes.<br>
+<span class="command">start after 22min<br>
+</span>
+</p>
+
+<p>And this will pause recording after 30 minutes or 20 MB.<br>
+<span class="command">pause after 30 minutes | 20 mb<br>
+</span>
+</p> 
+
+<p>You can abbreviate the word <b>hour</b> with <b>h,</b> 
+<b>minutes</b> with <b>m</b> or <b>min</b>, and <b>seconds</b> with <b>s</b> or <b>sec</b>.
+</p>
+
+<h2>Several conditions on one line</h2>
+
+<p>You can write many conditions in one line. Separate the conditions with <b>|</b> character. The values are then or'ed.</p>
+
+<p>For example, this will stop recording after 20 minutes <b>or</b> when filesize exceeds 1GB <b>or</b> if there is no input (the stream is empty, silent) in 5 seconds time.<br>
+<span class="command">stop after 20 min | 1GB | silence 5s<br>
+</span>
+</p>
+
+<p>Another example.<br>
+<span class="command">start if sound 6% or 10:00 pm<br>
+</span>
+</p>
+
+<h2>Commenting out lines</h2>
+<p>Use # character to comment out (deactivate) lines.</br>
+E.g this command has no effect.<br>
+<span class="command"># stop after 800 MB | 20:00:00<br>
+</span>
+</p> 
+
+<h2>Command-line options related to the timer</h2>
+
+<p>You can study the audio signal by starting the program with --debug-signal (or -d) option. The program will then print 
+audio level in dB (decibel) and normalized [0 - 1.0] format.
+</p>
+
+<p>This example will start the program from a command line. Start a terminal window from desktop's main menu and type<br>
+
+<span class="command">audio-recorder --debug-signal</span><br>
+or<br>
+<span class="command">audio-recorder -d</span>
+</p>
+
+<p>Then activate the timer.</p>
+<p>Click the checkbox to activate the timer and study the "<b>normalized RMS</b>" value. It will help you to set correct threshold for the silence and sound|voice|audio actions. Notice also that the amplitude-bar in the GUI shows <b>audio peak</b> value. It varies more than the RMS-value.
+</p> 
+
+<h2>Switch off when not needed</h2>
+<p>Switch off the timer (uncheck its checkbox) when you don't need it! This saves resources and CPU cycles.</p>
+
+<h2>Control the recorder from command line</h2>
+<p>You can easily control the program from a terminal window by using the -c or --command argument.</p>
+
+<p>Valid commands are: status, start, stop, pause, show, hide and quit.</p>
+
+<p>Some examples:<br>
+<span class="command">audio-recorder --command start</span><br>
+<span class="command">audio-recorder --command start,hide</span><br>
+<span class="command">audio-recorder --command hide</span><br>
+<span class="command">audio-recorder --command stop</span><br>
+<span class="command">audio-recorder --command stop,hide</span><br>
+<span class="command">audio-recorder --command quit</span><br>
+</p>
+
+<p>The status command returns one of these strings: 'not running', 'on', 'off' or 'paused'.<br>
+<span class="command">audio-recorder --command status</span><br>
+</p>
+
+<h2>Resetting all settings</h2>
+
+<p>You can reset all settings to default values by starting audio-recorder with --reset (or -r) argument.</br>
+<span class="command">audio-recorder --reset</span><br>
+</p>
+
+<p>This is equivalent to<br> 
+<span class="command">gsettings reset-recursively org.gnome.audio-recorder</span><br>
+</p>
+
+<p>For other options, type<br>
+<span class="command">audio-recorder --help</span>
+</p>
+
+<h2>Control the GUI from keyboard</h2>
+<p>You can use these keys to control the recorder (when its <b>window is active</b>).<br>
+<ul>
+<li>Cntr + R: Start recording.
+<li>Cntr + P: Pause recording.
+<li>Cntr + X: Stop recording.
+<li>Cntr + S: Save timer commands/text.
+</ul>
+
+</td>
+</tr>
+</table>
+
+
+</body>
+</html> 

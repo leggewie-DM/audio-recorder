@@ -1,0 +1,501 @@
+# Chinese (Simplified) translation for audio-recorder
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the audio-recorder package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: audio-recorder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-14 05:41+0000\n"
+"PO-Revision-Date: 2014-10-01 04:30+0000\n"
+"Last-Translator: moma <osmoma@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2017-01-15 06:09+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
+"Language: \n"
+
+#: ../src/about.c:70
+msgid ""
+"This product is released under terms of GPL, GNU GENERAL PUBLIC LICENSE v3.\n"
+msgstr "本产品遵循 GPL 协议，GNU 通用公共协议第三版。\n"
+
+#: ../src/about.c:71
+msgid "Please see http://www.gnu.org/licenses/gpl-3.0.txt for more details."
+msgstr "请访问 http://www.gnu.org/licenses/gpl-3.0.txt 查看更多细节。"
+
+#. Add the button
+#. Show dialog with [Installation details]
+#: ../src/about.c:133 ../src/about.c:151
+msgid "Installation details"
+msgstr "安装细节"
+
+#: ../src/about.c:154
+msgid "OK"
+msgstr ""
+
+#. 3) Add "User defined audio source" (user defined group of devices, selected for recording)
+#. ----------------------------
+#: ../src/audio-sources.c:584
+msgid "User defined audio source"
+msgstr "用户自定义音频源"
+
+#. Add "Default" device
+#. Translators: This is system's default audio device.
+#. id
+#: ../src/audio-sources.c:809
+msgid "System's default device"
+msgstr "系统默认设备"
+
+#. Translators: The "Public API" setting refers to Skype's Options -> Public API menu.
+#: ../src/dbus-skype.c:421
+msgid ""
+"Access to Skype denied.\n"
+"Answer YES to grant access to Skype.\n"
+"You can enable/disable this in the Skype's \"Public API\" settings."
+msgstr ""
+"访问 Skype 被拒绝。\n"
+"回答 YES 授权访问 Skype。\n"
+"您可以在 Skype 的“公共 API”设置菜单中启用/禁用该选项。"
+
+#. Send message to the GUI (normally a red message label)
+#. Translators: This message is shown in the GUI. A red label.
+#: ../src/dbus-skype.c:434
+msgid "Skype is offline. Cannot connect to Skype unless you login."
+msgstr "Skype 离线。除非您登陆，否则无法连接到 Skype。"
+
+#. Return application name.
+#. Name of the Skype application.
+#. Translators: English "Skype" name is OK:
+#. Skype name.
+#. Translators: English "Skype" is OK:
+#: ../src/dbus-skype.c:509 ../src/dbus-skype.c:748
+msgid "Skype"
+msgstr "Skype"
+
+#. Skype name + version.
+#. Translators: English "Skype %s" is OK:
+#: ../src/dbus-skype.c:744
+#, c-format
+msgid "Skype %s"
+msgstr "Skype %s"
+
+#. Translators: This is a folder/directory where we put recordings from the Skype
+#: ../src/dbus-skype.c:848
+msgid "Skype calls"
+msgstr "Skype 呼叫"
+
+#. Incoming Skype call.
+#. Translators: This is used like "Call from Alexander to Anna-Katarina 2010-12-26 10:30:20"
+#. Outgoing Skype call.
+#. Translators: This is used like "Call from Anna-Katarina to Alexander 2010-12-26 10:30:20"
+#: ../src/dbus-skype.c:860 ../src/dbus-skype.c:864
+#, c-format
+msgid "Call from %s to %s %s"
+msgstr "来自 %s 给 %s 的呼叫 %s"
+
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:839
+msgid "Cannot start reading from the stream/pipeline.\n"
+msgstr "无法从音频流/管道线启动数据读取。\n"
+
+#. Set err_msg
+#: ../src/gst-vad.c:338 ../src/gst-pipeline.c:125 ../src/gst-pipeline.c:144
+#: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
+#: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
+#: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
+#: ../src/gst-recorder.c:854
+#, c-format
+msgid "Cannot create audio pipeline. %s.\n"
+msgstr "无法创建音频管道。%s。\n"
+
+#. Set err_msg
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:804
+#, c-format
+msgid "Cannot find audio element %s.\n"
+msgstr "未发现音频元素 %s。\n"
+
+#: ../src/gst-recorder.c:251
+#, c-format
+msgid "Cannot write to file \"%s\".\n"
+msgstr "无法写入文件\"%s\"。\n"
+
+#. File name not given, set it to "Some filename"
+#: ../src/gst-recorder.c:963
+msgid "Some filename"
+msgstr "部分文件名称"
+
+#. Translator: This error message is shown in a MessageBox. Very rare error.
+#: ../src/help.c:136
+#, c-format
+msgid ""
+"Cannot start the internet browser.\n"
+"Please open the help file %s manually."
+msgstr ""
+"无法启动网络浏览器。\n"
+"请手动打开帮助文件 %s。"
+
+#: ../src/main.c:69
+msgid "Print program name and version."
+msgstr "打印程序名称和版本。"
+
+#: ../src/main.c:75
+msgid ""
+"Show application window at startup (0=hide main window, 1=force display of "
+"main window)."
+msgstr "开机启动时显示应用程序窗口(0=隐藏主窗口，1=强制显示主窗口)。"
+
+#: ../src/main.c:81
+msgid "Show icon on the system tray (0=hide icon, 1=force display of icon)."
+msgstr "显示系统托盘图标(0=隐藏图标，1=强制显示图标)。"
+
+#: ../src/main.c:87
+msgid "Reset all settings and restart audio-recorder."
+msgstr "重置全部设置并自动重启本应用。"
+
+#: ../src/main.c:95
+msgid "List signal level values in a terminal window."
+msgstr "在终端窗口列出信号级别值。"
+
+#: ../src/main.c:104
+msgid ""
+"Send a command to the recorder. Valid commands are; "
+"status,start,stop,pause,show,hide and quit. The status argument returns; "
+"'not running','on','off' or 'paused'."
+msgstr ""
+"发送一条命令给录音器。有效命令包括：status，start，stop，pause，show，hide 和 quit。状态参数返回：'not "
+"running'，'on'，'off' 或 'paused'。"
+
+#. Translators: This is a button label, also used in the menu.
+#. Stop recording.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#: ../src/main.c:139 ../src/main.c:204 ../src/systray-icon.c:257
+msgid "Stop recording"
+msgstr "停止录音"
+
+#. Translators: This is a button label, also used in the menu.
+#. Continue recording.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#: ../src/main.c:148 ../src/main.c:213 ../src/systray-icon.c:247
+msgid "Continue recording"
+msgstr "继续录制"
+
+#. Translators: This is a button label, also used in the menu.
+#. Start recording.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#: ../src/main.c:158 ../src/main.c:223 ../src/systray-icon.c:238
+msgid "Start recording"
+msgstr "开始录制"
+
+#. Translators: This is a small right-click-menu on the [Close] button.
+#: ../src/main.c:733
+msgid "Quit"
+msgstr "退出"
+
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/main.c:1042
+msgid "File:"
+msgstr "文件："
+
+#. "Add to file" label.
+#. Translators: This is a GUI label. Keep it VERY short.
+#: ../src/main.c:1065
+msgid "Add."
+msgstr "添加。"
+
+#. "Timer>" GUI expander.
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/main.c:1076
+msgid "Timer."
+msgstr "计时器。"
+
+#. "Audio settings>" GUI expander.
+#. Translators: This is a GUI label.
+#: ../src/main.c:1165
+msgid "Audio settings."
+msgstr "音频设置。"
+
+#. Audio Source label (meaning Audio Source, the device or program that produces sound).
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/main.c:1186
+msgid "Source:"
+msgstr "音频源："
+
+#. Audio format; .OGG, .MP3, .WAV, etc. See media-profiles.c.
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/main.c:1249
+msgid "Format:"
+msgstr "格式："
+
+#. [Additional settings] button.
+#. Translators: This is a label on the [Additional settings] button.
+#. Translators: This is a title in the additional settings dialog
+#: ../src/main.c:1326 ../src/settings.c:594
+msgid "Additional settings"
+msgstr "附加设置"
+
+#: ../src/media-profiles.c:660 ../src/media-profiles.c:665
+#: ../src/media-profiles.c:670
+#, c-format
+msgid ""
+"Please install additional plugins (from gstreamer1.0-plugins-* package) to "
+"support the %s format.\n"
+msgstr ""
+
+#. Add "Microphone" to the device description
+#: ../src/gst-devices.c:298
+msgid "(Microphone)"
+msgstr "(麦克风)"
+
+#: ../src/gst-devices.c:378
+msgid "(Audio output)"
+msgstr ""
+
+#. Program name.
+#. Translators: This is the name of this Audio Recorder program.
+#: ../src/support.c:58
+msgid "Audio Recorder"
+msgstr "音频录制器"
+
+#. Tray menu.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#. Tray menu.
+#: ../src/systray-icon.c:92 ../src/systray-icon.c:221
+msgid "Show window"
+msgstr "显示窗口"
+
+#. Tray menu.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#. Tray menu.
+#: ../src/systray-icon.c:96 ../src/systray-icon.c:217
+msgid "Hide window"
+msgstr "隐藏窗口"
+
+#. Translator: This error message is shown in a MessageBox.
+#: ../src/systray-icon.c:133
+#, c-format
+msgid ""
+"Cannot start file browser.\n"
+"Please display %s manually."
+msgstr ""
+"无法打开文件浏览器。\n"
+"请手动显示 %s。"
+
+#. Pause recording.
+#. Translators: This belongs to the tray menu (menu on the system tray).
+#: ../src/systray-icon.c:267
+msgid "Pause recording"
+msgstr "暂停录制"
+
+#. Menu item "Show saved recordings".
+#. Open Audio-folder and show all saved recordings.
+#. Translators: This belongs to the tray menu (menu on the system tray)
+#: ../src/systray-icon.c:283
+msgid "Show saved recordings"
+msgstr "显示已保存的录音"
+
+#. Deprecated in GTK 3.10
+#. menu_item = gtk_image_menu_item_new_from_stock(GTK_STOCK_ABOUT, NULL);
+#: ../src/systray-icon.c:297
+msgid "_About"
+msgstr ""
+
+#. Deprecated in GTK 3.10
+#. menu_item = gtk_image_menu_item_new_from_stock(GTK_STOCK_QUIT, NULL);
+#: ../src/systray-icon.c:311
+msgid "_Quit"
+msgstr ""
+
+#. no setup function
+#. no user data
+#. Translators: This is an error message.
+#: ../src/utility.c:473
+#, c-format
+msgid ""
+"Exec error. Cannot start process %s.\n"
+"%s.\n"
+msgstr ""
+"执行错误。无法启动进程 %s。\n"
+"%s。\n"
+
+#. Translators: This is a default filename pattern. You can keept this as it is.
+#: ../src/utility.c:744
+msgid "%Y-%m-%d-%H:%M:%S"
+msgstr "%Y-%m-%d-%H:%M:%S"
+
+#. Translators: This is a directory name like "/home/username/Audio".
+#. We store all recordings in this directory.
+#: ../src/utility.c:776
+msgid "Audio"
+msgstr "音频"
+
+#. Translators: This is a title in a directory chooser dialog.
+#: ../src/settings.c:120
+msgid "Select Directory"
+msgstr "选择目录"
+
+#. Set GUI label
+#: ../src/settings.c:290
+#, c-format
+msgid "Recording devices for %s:"
+msgstr "%s 设备录音："
+
+#. Translators: This is a label in the [Additional settings] dialog
+#: ../src/settings.c:345
+msgid "Media players (RhythmBox, Banshee, etc.)"
+msgstr "媒体播放器(RhythmBox，Banshee 等)"
+
+#. Translators: This is a label/help text in the [Additional settings] dialog
+#: ../src/settings.c:350
+msgid "Select output device (speakers) for recording."
+msgstr "选择输出设备(扬声器)以录音。"
+
+#. Translators: This is a label/help text in the [Additional settings] dialog
+#: ../src/settings.c:359
+msgid "Select both output device (speakers) and webcam/microphone."
+msgstr "选择输出设备(扬声器)和摄像头/麦克风。"
+
+#. Translators: This is a label/help text in the [Additional settings] dialog
+#: ../src/settings.c:371
+msgid "Select one or more devices for recording."
+msgstr "选择一个或多个设备以录音。"
+
+#. Translators: This is a [Tab-page] in the [Additional settings] dialog.
+#: ../src/settings.c:620
+msgid "General"
+msgstr "常规"
+
+#. "Folder name:" label
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/settings.c:633
+msgid "Folder name:"
+msgstr "文件夹名称："
+
+#. "Filename format:" label
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/settings.c:653
+msgid "Filename format:"
+msgstr "文件名格式："
+
+#. Translators: This is a label for an ON/OFF switch.
+#: ../src/settings.c:711
+msgid "Keep window on top."
+msgstr ""
+
+#. Translators: This is a label for an ON/OFF switch.
+#: ../src/settings.c:727
+msgid "Show icon on the system tray."
+msgstr "在系统托盘显示图标。"
+
+#. Translators: This is a label for an ON/OFF switch.
+#: ../src/settings.c:745
+msgid "Auto-start this application at login."
+msgstr "登陆时自动启动该程序。"
+
+#. Translators: This is a label for an ON/OFF switch.
+#: ../src/settings.c:770
+msgid "Record ringing sound for Skype."
+msgstr "录制 Skype 铃声。"
+
+#. Translators: This is a [Tab-page] in the [Additional settings] dialog.
+#: ../src/settings.c:788
+msgid "Device settings"
+msgstr "设备设置"
+
+#: ../src/settings.c:790
+msgid "Installed items:"
+msgstr "已安装程序："
+
+#. Translators: This is a [Tab-page] in the [Additional settings] dialog.
+#: ../src/settings.c:853
+msgid "Recording commands"
+msgstr ""
+
+#. Show dialog with the GStreamer command
+#: ../src/settings-pipe.c:256
+msgid "Recording command"
+msgstr ""
+
+#: ../src/settings-pipe.c:259
+msgid "_OK"
+msgstr ""
+
+#. Translators: This is a filename "test.xxx".
+#: ../src/settings-pipe.c:304
+#, c-format
+msgid "test.%s"
+msgstr ""
+
+#. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
+#: ../src/settings-pipe.c:318
+msgid "# Copy and paste the following command to a terminal window."
+msgstr ""
+
+#. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
+#: ../src/settings-pipe.c:321
+msgid "# The devices are taken from the GUI (main window)."
+msgstr ""
+
+#. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
+#: ../src/settings-pipe.c:324
+msgid ""
+"# Use the pactl tool to list all available audio (input) devices in your "
+"system."
+msgstr ""
+
+#. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
+#: ../src/settings-pipe.c:331
+#, c-format
+msgid "# This command will record to %s file."
+msgstr ""
+
+#. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
+#: ../src/settings-pipe.c:334
+msgid "# Press Control-C to terminate the recording."
+msgstr ""
+
+#. Editable ComboBox with media-profiles
+#. "Title:" label
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/settings-pipe.c:397
+msgid "Title:"
+msgstr ""
+
+#. File extension.
+#. Translators: This is a GUI label. Keep it short.
+#: ../src/settings-pipe.c:412
+msgid "File extension:"
+msgstr ""
+
+#. Names of GStreamer packages.
+#. Translators: This is a GUI label (package description). Keep short.
+#: ../src/settings-pipe.c:422
+msgid "Package:"
+msgstr ""
+
+#. Translators: Button label in Additional settings -> Recording commands.
+#: ../src/settings-pipe.c:439
+msgid "Show cmd"
+msgstr ""
+
+#. Translators: Button label in Additional settings -> Recording commands.
+#: ../src/settings-pipe.c:444
+msgid "Reset"
+msgstr ""
+
+#. Translators: Button label in Additional settings -> Recording commands.
+#: ../src/settings-pipe.c:456
+msgid "New"
+msgstr ""
+
+#. Translators: Button label in Additional settings -> Recording commands.
+#: ../src/settings-pipe.c:461
+msgid "Delete"
+msgstr ""
+
+#. Translators: Button label in Additional settings -> Recording commands.
+#: ../src/settings-pipe.c:466
+msgid "Save"
+msgstr ""

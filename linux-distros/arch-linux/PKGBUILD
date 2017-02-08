@@ -1,0 +1,34 @@
+# Maintainer: Spike29 <leguen.yannick@gmail.com>
+# Contributor: Lucas Saliés Brum <lucas@archlinux.com.br>
+
+pkgname=audio-recorder
+pkgver=1.9.4
+pkgrel=4
+pkgdesc="Audio recorder for GNOME and Unity Desktops"
+arch=('i686' 'x86_64')
+url='https://launchpad.net/audio-recorder'
+license=('GPL3')
+depends=('gstreamer>=1.4.0' 'gtk3')
+makedepends=('intltool')
+optdepends=('pulseaudio: for extended recording capabilities'
+	    'gst-plugins-base: for OGG encoding' 
+	    'gst-plugins-good: for WAV and Flac encoding'
+	    'gst-plugins-bad: for AAC encoding'
+	    'gst-plugins-ugly: for MP3 encoding'
+	    'libappindicator3: for indicator applet support')
+provides=('audio-recorder')
+install="$pkgname.install"
+conflicts=('audio-recorder-bzr' 'audio-recorder-from-deb')
+source=("https://launchpad.net/$pkgname/trunk/version1.9.4/+download/$pkgname-1.9.4.tar.gz")
+md5sums=('??????')
+
+build() {
+  cd "$srcdir/$pkgname"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  make DESTDIR="$pkgdir/" install
+}

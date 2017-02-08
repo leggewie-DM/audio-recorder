@@ -1,0 +1,346 @@
+2017-01-08  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.4
+  * Small updates concerning GTK3+ 3.22
+
+2017-01-06  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.3
+  * A small update in data/audio-recorder.desktop file.
+
+2017-01-06  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.2
+  * Removed .bzr from the source ball.
+
+2017-01-06  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.1
+  * Addressing bug #1653544.
+
+2017-01-02  David Rabel <David.Rabel@noresoft.com>
+  * Version 1.9.0
+  * Cleanups in build and configuration files for Debian (by David Rabel)
+
+2016-08-10  Osmo Antero <osmoma@gmail.com>
+  * Version 1.8-0
+  * Recompilation for Ubuntu 16.10. 
+
+2015-09-25  Osmo Antero <osmoma@gmail.com>
+  * Version 1.7-5
+  * Cleanups.
+  
+2015-09-25  Osmo Antero <osmoma@gmail.com>
+  * Version 1.7-4
+  * Fixed bug with long file names. Show correct version number in about dialog.
+  
+2015-09-25  Osmo Antero <osmoma@gmail.com>
+  * Version 1.7-3
+  * Fixed bug with long file names. 
+  
+2015-09-01  Osmo Antero <osmoma@gmail.com>
+  * Version 1.7-2
+  * Removed deprecated GLIB 2.46 and GTK 3.16 functions. 
+
+2015-08-31  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.7-1
+  * Recompilation for Ubuntu 15.10. No code changes. Some language updates. 
+
+2015-08-30  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-5
+  * Recompilation for Ubuntu 15.10. No code changes. Some language updates(SP,NO,FR). 
+
+2015-04-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-4
+  * GTK3+ has now a standard GtkLevelBar widget. Renamed our 'GtkLevelBar' widget to 'LevelBar'.
+  * Renamed src/gtklevelbar.[ch] to src/levelbar.[ch].
+
+2015-03-17  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-3
+  * Added -e (--eos-on-shutdown) option to the gst-launch command in Additional Settings -> Recording Commands -> Show Cmd.
+  * This will make sure all test files (test recordings) are terminated properly.   
+
+2015-02-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-2
+  * audio-recorder --reset did not always work because GSettings registry was not flushed immediately.
+  * I added conf_flush_settings() to dconf.c. This will flush and write the settings to disk at --reset.
+
+2015-02-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-1
+  * Some updates in data/timer-syntax.html.
+  * Small changes in settings.c, settings-pipe.c.
+
+2015-02-06  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.6-0.
+  * Improved, automatic installation of missing plugins. Configuration (configure.ac) needs now  
+  * gstreamer-pbutils-1.0 library and compilation needs libgstreamer-plugins-base1.0-dev package.
+  * Removed deprecated GTK 3.14 functions. 
+  * Removed support for GtkStatusIcon class in systray-icon.c file (we support only AppIndicator).
+  * Fixed the level-bar widget (for GTK 3.14). User can change the bar style by left/right 
+  * clicking on the widget.  
+  * Handle multiple timer commands better (changes in timer.c). 
+
+2014-10-30  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.5-7 (merely a re-compilation on the Launchpad.net).
+  * Wrong version number in the About-dialog.
+  * I have re-run; make clean; aclocal && autoconf && automake -a; ./configure to set it right. 
+  * Version number is conveyed from configure.ac.
+  
+2014-10-29  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.5-6
+  * Fixed bug #1386793. Filename was cut off if filename pattern contained a '.'
+  * Some improvements in src/settings-pipe.c.
+  
+2014-10-28  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.5-5
+  * Find default (active) audio-card when recording from media-players and Skype.
+  * Some language updates (fr,uk,no,fi).
+
+2014-10-09  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.5
+  * This version of a.r requires GStreamer 1.4 (check: gst-launch-1.0 --version)
+  * Fixed autostart Bug #1312524 by deleting the file when autostart is set OFF.
+  * Fixed compatibility bug in configure.ac. Ref. Bug #1379339, patched by DimStar.
+  * Removed dependency to libpulse-dev (removed also files; src/pulseaudio.[ch]). 
+  * Using now Gstreamer to get list of audio devices (new files; src/gst-devices.[ch]). 
+  * Notice; Fedora Linux, Arch Linux, etc, please see debian/control file for required and changed dependencies.
+  * New and unplugged devices are detected automatically.  
+  * User can change and add new recording pipelines. Please see [Additional settings] dialog and 
+  * implementation in win-settings-pipe.[ch] module.
+  * Improved MP3-recording with id3mux. Ref. Bug #1354973.
+  * Better error message at missing Gstreamer-plugin. 
+  * Automatic installation of (missing) plugins needs to be completed in next version. 
+
+2014-09-24  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.4-7. Pre 1.5 !
+  * audio-recorder/COPYING is now a file, not a link. (ref. Fedora/RedHat).
+  * Updated linux-distros/fedora/readme.txt and audio-recorder.spec (ref. Ron H.)
+  * New option in settings to "keep window on top".
+  * User can now edit/add new media profiles and pipelines for recording (ref. settings-pipe.c). Will come!
+  * Renamed src/win-settings.[ch] to src/settings.[ch]. Added src/win-settings-pipe.[ch].
+
+2014-03-08  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.4-5
+  * Compiling a.r for Ubuntu 14.04. 
+  * Fixed error in data/Makefile.am. 
+  * Schema data/org.gnome.audio-recorder.gschema.xml was not compiled.
+
+2014-01-16  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.4-2
+  * Question #241801 Timer.c fails to start and stop recording.
+
+2013-12-09  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.4-1
+  * Bug #1258822 Timer.c does not stop recording in some rare cases.
+  * Changes in timer.c should address this bug.
+
+2013-12-06  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.4
+  * Replaced fixed size icons 16x16,...,64x64 with scalable svg images.
+  * Modified also also pixmap/audio-recorder-off-dot.svg, audio-recorder-on-dot.svg, audio-recorder-paused-dot.svg. 
+
+2013-11-23  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.3-3
+  * Language updates on Ukrainian(uk) and Chinese Simplified(zh_CN) texts.
+  * Preliminary test on getting device list from GStreamer 1.x instead of PulseAudio.
+  * Note: bumped version to 1.3-3. Build of version 1.3-2 failed.
+
+2013-10-18  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.3-1
+  * zh_TW translation updates.
+
+2013-10-12  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.3
+  * Final release for Ubuntu 13.10 (Saucy Salamander). 
+  * Some new translations.
+
+2013-08-04  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.2
+  * First build for Ubuntu 13.10 (Saucy Salamander). 
+  * Renamed configure.in to configure.ac.
+
+2013-05-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.1.2
+  * Updated audio-recorder.spec file for Fedora 19.
+  * Some language updates from Launchpad.net.
+
+2013-05-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.1.1
+  * Fixed bug #1159341. Systray icon popped ON after reboot or logout.
+
+2013-05-08  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.1
+  * Migrated dbus-skype.c to GDBus intrerface.
+  * Removed dependency to dbus-glib-1 library (from configure.in and debian/control).
+  * Removed skype-service.[ch] and skype-service-object-glue.h from the project.
+
+2013-03-21  Osmo Antero <osmoma@gmail.com>
+
+  * Version 1.0
+  * Removed dependency to libgnome-media-profiles library (media-profiles.c).
+  * Fixed bug #1074928 on Arch-Linux. Couldn`t find configuration values in dconf.
+  * See function conf_get_base_settings() in src/dconf.c.
+  * Getting player name and executable from player's .desktop file.
+
+2012-12-01  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.9
+
+2012-11-04  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.8
+  * Fixed bug #1074928. Audio-recorder could not find configuration values (in dconf) and exited. 
+  * Trying to fix this by calling g_settings_schema_source_lookup() with recursive=TRUE in dconf.c.
+
+2012-10-28  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.7
+  * A.r will now remember lastly used media-players (dbus-player.c).
+  * New/changed key in data/org.gnome.audio-recorder.gschema.xml.
+
+2012-10-19  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.6
+
+2012-10-11  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.5
+  * Moving to Gstreamer 1.0.
+
+2012-10-08  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.4
+  * Removed remaining deprecated functions from the code. Full GTK3 support.
+
+2012-09-30  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.3
+  * Upgrade for Ubuntu 12.10 and F18. Improved timer and VAD-modules. Better gst-pipeline.
+
+2012-04-26  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9.1
+  * Improved MPRIS2 interface. VLC media-player should now work with ar. 
+
+2012-04-18  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.9
+  * MPRIS2 compliant media-player interface (dbus-mpris2.c)
+  * Removed fixed icons. Icons are now loaded from the current theme.  
+
+2012-04-05  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.8.2
+  * Set right version number in the .deb package.
+
+2012-04-01  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.8
+  * New widget for the level bar (See GtkLevelBar class in gtklevelbar.[ch])
+
+2012-03-30  Osmo Antero <osmoma@gmail.com>
+  * Version 0.7
+  * Updated code for Fedora 16 and Ubuntu 12.04.
+  * Uses now GTK 3 libraries.
+
+2011-09-26  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.6.2
+  * Fixing typo in debian/control file.
+  * Needs libappindicator3-dev instead of libappindicator-dev.
+
+2011-09-26  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.6.1
+  * Fixing debian/control file.
+  * It seems that "libgnome-media-profiles-dev" (in Ubuntu 11.10 beta) still requires the "libgconf2-dev" package.
+  * I hope they will remove this dependency. But for now, add libgconf2-dev.
+
+2011-09-26  Osmo Antero <osmoma@gmail.com>
+
+  * Version 0.6.
+  * Ported this application to GTK 3/GDK 3.
+  * Using now GSettings (and dconf) instead of GConf2. See dconf.[ch].
+  * Better Banshee integration.
+  * Some changes in GUI labels (need re-translation).
+
+2011-09-26  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath, m4/ChangeLog.
+	* configure.in (AC_CONFIG_FILES): Add po/Makefile.in.
+
+2011-09-18   Osmo Antero <osmoma@gmail.com>
+
+    * Version 0.5
+    * Added simple DBus-service so recorder can be controlled from command line or other applications.
+    * See audio-recorder --help.
+    * Added support for Unity's launcher icon. audio-recorder.desktop file contains now static menu items 
+    * for "start recording", "stop recording", "pause" and "show window".
+
+2011-02-08   Osmo Antero  <osmoma@gmail.com>
+
+    * Released version 0.3.
+    * This version replaces the old rec-applet package.
+
+2010-10-05   Osmo Antero  <osmoma@gmail.com>
+
+    * Released version 0.2.3
+    * New translations; en_AU, de, fr, hu
+
+2010-08-20   Osmo Antero  <osmoma@gmail.com>
+
+    * Initial import of new languages; pt_BR (thanks to Jose Humberto), pt (Europe) and fi_FI.
+
+2010-08-17  Osmo Antero  <osmoma@gmail.com>
+
+    * Released version 0.2.
+
+2010-08-16  Osmo Antero  <osmoma@gmail.com>
+
+    * The data stream from GStreamer is now properly terminated. The AAC .m4a files (via the faac encoder) are now playable (always!).
+    * The GStreamer EOS event is sent, and the event loop now correctly waits for it.
+    * Added new directory rec-applet/data with (HTML) help files and COPYING file.
+    * The help files can be launched from the GUI.
+    * The right-click menu is now translatable. The entire app is translatable.
+    * Translated the application to Norwegian Bokmål, in .../po/nb_NO.po.
+    * Small improvements in the stop-timer's input format (such as 12-hour clock with am and pm suffices).
+
+2010-08-15  Osmo Antero  <osmoma@gmail.com>
+
+    * Getting now supported audio-formats from GNOME's media-profiles library (requires libgnome-media-dev package).
+    * See media-profiles.[ch].
+    * The stop-timer field can now take several values separated by "|" (meaning OR). Eg. Stop After: "1 h 20min | 500 MB | silence 7s". 
+
+2010-08-07  Osmo Antero  <osmoma@gmail.com>
+
+    * Several improvements:
+    * The "Default" audio device now tries to create pipeline of "gconfaudiosrc" element.
+    * The size of the applet is now correct (earlier it expanded too much horizontally).  
+    * The applet now obeys color/background settings of the panel; transparent and opaque values are ok.
+    * The time ##:##:## and the file size labels resize correctly.
+    * The settings window now opens at correct position depending on the panel orientation.
+
+2010-08-04  Osmo Antero  <osmoma@gmail.com>
+
+    * GNOME Audio Recorder Applet v0.1 released
+

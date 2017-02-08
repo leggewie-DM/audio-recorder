@@ -1,0 +1,222 @@
+<schemalist>
+
+  <!-- GSettings schema for audio-recorder.
+       See also src/dconf.[ch] modules.
+  -->
+  <schema id="org.gnome.audio-recorder" path="/apps/audio-recorder/">
+
+    <key name="started-first-time" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="audio-device-id" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="audio-device-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="audio-device-type" type="i">
+      <default>-1</default>
+    </key>
+
+    <key name="append-to-file" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="filename-pattern" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="folder-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="timer-active" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="timer-expanded" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="timer-text" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="timer-setting-counter" type="i">
+      <default>0</default>
+    </key>
+
+    <key name="settings-expanded" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="media-format" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="show-systray-icon" type="b">
+      <default>false</default>
+    </key>
+
+    <!-- Keep window on top? 
+    -->
+    <key name="keep-on-top" type="b">
+      <default>true</default>
+    </key>
+
+    <!-- enum BAR_VALUE.
+    Type of value on the level bar.
+    Valid values are: {VALUE_NONE, VALUE_0_1/*0 - 1.0*/, VALUE_PERCENT/*0 - 100%*/}.
+    In the GUI: LEFT-click on the levelbar widget.
+    -->
+    <key name="level-bar-value" type="i">
+      <default>1</default>
+    </key>
+
+    <!-- enum BAR_SHAPE.
+    Shape of pulse on the level bar.
+    Valid values are: {SHAPE_LEVELBAR, SHAPE_LINE, SHAPE_LINE2, SHAPE_CIRCLE}.
+    In the GUI: RIGHT-click on the levelbar widget.
+    -->
+    <key name="level-bar-shape" type="i">
+      <default>3</default>
+    </key>
+
+    <!-- enum PULSE_TYPE.
+    Whether the levelbar/pulsebar should pulse audio RMS or peak-values.
+    Start audio-recorder with -d or \-\-debug-signal option to see these values.
+    Valid values are: {PULSE_PEAK, PULSE_RMS}. 
+    Peak varies more than rms and suits better for the pulsebar.
+    -->
+    <key name="level-bar-pulse-type" type="i">
+      <default>0</default>
+    </key>
+
+    <!-- Array of modified and saved Gstreamer pipelines (pipeline fragments) with name, package name  and file extension.
+    Hard-coded default values are in src/media-profiles.c.
+    User can modify those and add new media profiles. Modifications are saved in this a(ssss) array.
+
+    Array has 4 items: 
+    [(pipeline name, file extension, x, pipeline for recording), (a,b,x,d), etc ]
+
+    An example:
+    [("CD Quality, Lossless 44KHz", "flac", "" , "audio/x-raw,rate=44100,channels=2 ! flacenc name=enc"), (....), (....)]
+
+    Notice: The field x is not used anymore. Kept for future. 
+    
+    -->
+    <key name="saved-profiles" type="a(ssss)">
+      <default>[]</default>
+    </key>
+
+    <!-- Child schemas and sub paths -->
+    <child name='skype' schema='org.gnome.audio-recorder.skype'/>
+    <child name='track' schema='org.gnome.audio-recorder.track'/>
+    <child name='players' schema='org.gnome.audio-recorder.players'/>
+
+  </schema>
+
+  <!-- Schema for /apps/audio-recorder/skype/ -->
+  <schema id="org.gnome.audio-recorder.skype" path="/apps/audio-recorder/skype/">
+
+    <key name="record-ringing-sound" type="b">
+      <default>true</default>
+    </key>
+    
+  </schema>
+
+
+  <!-- Schema for /apps/audio-recorder/track/ -->
+  <schema id="org.gnome.audio-recorder.track" path="/apps/audio-recorder/track/">
+
+    <!-- Last generated and recorded file name with full path -->
+    <key name="last-file-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="track-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="artist-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="album-name" type="s">
+      <default>""</default>
+    </key>
+
+    <key name="track-pos" type="i">
+      <default>0</default>
+    </key>
+
+    <key name="track-len" type="i">
+      <default>0</default>
+    </key>
+
+  </schema>
+
+  <!-- Schema for /apps/audio-recorder/players/ -->
+  <schema id="org.gnome.audio-recorder.players" path="/apps/audio-recorder/players/">
+
+    <!-- From audio-sources.h -->
+    <!-- DeviceType: NOT_DEFINED 0x0-->
+    <key name="device-type-0" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: DEFAULT_DEVICE 0x1  (system's default audio input)-->
+    <key name="device-type-1" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: AUDIO_SINK 0x2 (audio output. not usable for recording. see next enum)-->
+    <key name="device-type-2" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: AUDIO_SINK_MONITOR 0x4 (tap audio from sound-card)-->
+    <key name="device-type-4" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: AUDIO_INPUT 0x8 (microphones, webcams)-->
+    <key name="device-type-8" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: MEDIA_PLAYER 0x10 (RhythmBox, Banshee, etc.)-->
+    <key name="device-type-16" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: COMM_PROGRAM 0x20 (such as Skype) -->
+    <key name="device-type-32" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- DeviceType: USER_DEFINED 0x40 (one or more devices for recording) -->
+    <key name="device-type-64" type="as">
+      <default>[]</default>
+    </key>
+
+    <!-- Save some lastly used MediaPlayers.
+
+         This string array has format: ["player name1=service name1", "player name2=service name2", ...,]
+
+         An example:
+         ["Rhythmbox=org.mpris.MediaPlayer2.rhythmbox", "VLC=org.mpris.MediaPlayer2.vlc",...,].
+
+        FIXME: Convert this to array with two string elements a(ss) ! 
+    -->
+    <key name="saved-player-list" type="as">
+      <default>[]</default>
+    </key>
+
+  </schema>
+
+
+</schemalist>

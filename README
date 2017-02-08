@@ -1,0 +1,308 @@
+Audio Recorder Application <https://launchpad.net/~audio-recorder>
+
+This amazing program allows you to record your favourite music or audio to a file. 
+It can record audio from your system's soundcard, microphones, browsers, webcams & more. 
+Put simply; if it plays out of your loudspeakers you can record it. 
+
+It has an advanced timer that can:
+* Start, stop or pause recording at a given clock time.
+* Start, stop or pause after a time period.
+* Stop when the recorded file size exceeds a limit.
+* Start recording on voice or sound (user can set the audio threshold and delay).
+* Stop or pause recording on "silence" (user can set the audio threshold and delay).
+
+The recording can be atomatically controlled by:
+* RhytmBox audio player.
+* Banshee audio player.
+* Amarok, VLC, Audacious and other MPRIS2 compatible players.
+* Skype. It can automatically record all your Skype calls without any user interaction.
+
+This program supports several audio (output) formats such as OGG audio, Flac, MP3 and WAV. 
+
+User can also control the recorder from command line with --command <arg> option.
+See audio-recorder --help for more information.
+
+Please read the README and INSTALL files before compilation.
+
+Important files:
+****************
+README	- This file.
+INSTALL	- Compilation from source and installation.
+COPYING	- The license text.
+AUTHORS	- Authors and contributors.
+NEWS	- Recent news, releases.
+debian/README - Instructions to create a Debian/Ubuntu package.
+
+Compilation from source and installation:
+*****************************************
+Read the INSTALL file for detailed information about compilation of this program.
+
+Runtime:
+********
+Runtime (running this program) has currently these dependencies. The package names are from 
+Debian/Ubuntu but you should find similar (and newer) packages in any other Linux-distribution.
+
+libgtk-3-0
+libglib2.0-0
+appindicator3-0.1
+libgstreamer1.0-0
+gstreamer-pbutils-1.0
+gstreamer1.0-pulseaudio 
+gstreamer1.0-plugins-base 
+gstreamer1.0-plugins-good
+libdbus-1-3
+ 
+Get also these packages to record MP3 and M4A formats:
+gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-ugly
+gstreamer1.0-libav
+
+For developers:
+***************
+The configuration uses Automake/Autoconf tools. The most important files are: 
+
+Makefile.am  - General build and installation instructions.
+configure.ac  - Configuration of source with library existens and error check.
+pixmaps/Makefile.am - Installation of icons.  
+src/Makefile.am - Build and installation instructions. Contains list of all source files.
+po/POTFILES.in - Language support. List of source files that has translatable text.
+
+The general sequence of commands to re-configure the source is:
+
+cd audio-recorder*
+aclocal
+autoconf
+automake -a 
+
+Or as one-liner:
+aclocal && autoconf && automake -a
+
+Or, run:
+autoreconf -i
+
+Then configure, compile/link and install:
+ 
+./configure  # configure produces the final Makefile (food for make).
+make
+sudo make install  # run this as root or sudo.
+
+File locations:
+***************
+* "Make install" will copy the audio-recorder executable to /usr/bin directory.
+This default location can be changed during the ./configure phase.
+Run ./configure --help for more instructions.
+
+* Pixmap images are copied to /usr/share/pixmaps/audio-recorder/.
+
+* Icons are installed to /usr/share/icons/hicolor/*/apps/.
+
+* The HTML help files from audio-recorder/data/ are by default copied to /usr/share/audio-recorder/.
+
+* This program uses now DConf registry to store program settings. The older version used GConf.
+All valid configuration keys must be defined in the schema file "org.gnome.audio-recorder.gschema.xml".
+You can find it in the data/ folder.
+This xml-file must then be compiled and installed to /usr/share/glib-2.0/schemas/ directory.
+
+The data/Makefile.am does this automatically when you run "sudo make install". 
+
+You can also compile and install the schema manually:
+0) First, test the schema (xml) file. I assume here that the schema is in the current (.) directory.
+   $ glib-compile-schemas --dry-run .
+
+1) Copy the schema file to /usr/share/glib-2.0/schemas/.
+   $ sudo cp org.gnome.audio-recorder.gschema.xml /usr/share/glib-2.0/schemas/
+
+2) Then re-compile all schemas.
+   $ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+
+You can also study the various schema-values with gsettings and dconf-editor tools.
+$ gsettings
+$ dconf-editor
+--------------
+
+Language support:
+*****************
+
+1) First, translate the data/audio-recorder.desktop file.
+Open it and add your translations to it.
+
+gedit data/audio-recorder.desktop
+
+2) Tanslate the program itself.
+The language files are saved in the source's po/ directory.
+
+Each translatable file should be listed in the po/POTFILES.in file. Add names of new code-files there.
+
+Translating audio-recorder.pot to a new language.
+
+Translate on the Launchpad.
+Use Launchpad for the translations. Browse to https://translations.launchpad.net/audio-recorder
+Login and open a new language file.
+
+Important: The translations from the Launchpad are automatically copied/synchronized to the source code's po/ directory. 
+Launchpad does this transfer once a day.
+
+You should regularly download the translated .po files from Launchpad to your local copy(branch) by using this command
+bzr merge
+or
+bzr merge --force
+
+Then update the "audio-recorder.pot" file by running "make update-po" in the po/ directory. 
+audio-recorder.pot contains all translatable _("xxx") strings found in the code. Do:
+
+cd audio-recorder*
+cd po
+make update-po
+
+It creates binary language file (*.gmo) of each *.po.
+
+Testing the program with new languages:
+You can easily test the program with various languages (language files). 
+Simply set the LANG= variable before starting the program. 
+Eg. this will start the audio recorder with Dutch (nl) language setting.
+$ LANG=nl_NL.UTF-8 audio-recorder
+
+This will start it with Norwegian Bokmål. Put all this on one line.
+LANG=nb_NO.UTF-8 audio-recorder
+
+And Finland/Finnish
+LANG=fi_FI.UTF-8 audio-recorder
+
+Of course you must generate and install the language files with
+make
+sudo make install
+
+Notice: You must also install the same language in system settings!
+Look for the "Language support" dialog. Install all necessary languages there.
+You can set the current language in the login-screen (at least in the earlier version of GNOME).
+
+4) You may also translate the HTML-files (help files) in the audio-recorder/data directory.
+If not translated, the program will show the original english text.
+You will find instructions in audio-recorder/data/readme.txt file.
+
+Send new language files to developers for inclusion in the package.
+See: https://launchpad.net/~audio-recorder or programs About-dialog.
+
+Development:
+************
+First of all, install necessary development (*-dev) packages as instructed in the INSTALL file. 
+Of cource you will also need the compiler (gcc) and Automake tools. 
+In Ubuntu you should simply get the "build-essential", "automake" and "autoconf" packages.
+
+The code is written in c with GDK/GTK+ libraries and it is hosted on the Launchpad at address:
+https://launchpad.net/~audio-recorder
+
+Launchpad uses Bazar (bzr) as the code versioning system. In Ubuntu you should install the "bzr" package. 
+
+Then (very important!) read the README and INSTALL files for further instructions.
+
+The program's about-dialog vill show details about the installation directories and locations.
+Run the program and check its about-dialog.
+
+Coding standard:
+****************
+I use the Gedit for code editing. In the the preferences I set 
+* Tab-stops width to 4 (as spaces).
+* And checkmark the "Insert spaces instead of tabs" option.
+
+I use the "astyle" command to make all code formatting. You may need to install it first.
+
+sudo apt-get install astyle 
+
+Astyle documentation: http://astyle.sourceforge.net/astyle.html
+
+Then run astyle command from the base (audio-recorder) directory.
+
+For a single file (eg. audio-source.[ch]), run
+astyle --style=attach --indent=spaces=4 --suffix=none src/audio-source.[ch]
+
+For all source files, run
+astyle --style=attach --indent=spaces=4 --suffix=none src/*.[ch]
+
+During development:
+*******************
+During coding, type "make" in the root directory to re-compile and link all changes.
+
+cd audio-recorder*
+make 
+
+You do not ned to "sudo make install" the entire application after each compilation. Instead, run
+
+src/audio-recorder
+
+This way you can code and test the application relatively fast.
+
+You can clean up all binary and object (*.o) files with "make clean".
+make clean
+
+Debugging:
+**********
+You may enable the DEBUG_ALL and ACTIVATE_DEBUGGING directives in the src/log.h file. 
+Open src/log.h and enable or disable
+
+#define DEBUG_ALL
+#define ACTIVE_DEBUGGING
+
+Some modules have their own debugging flags. You may enable/disable 
+DEBUG_PLAYER in src/dbus_player.h
+DEBUG_SKYPE in src/dbus-skype.h
+DEBUG_LISTENER in src/gst_listener.h
+DEBUG_TIMER src/timer.h
+----
+
+Command line options:
+*********************
+src/audio-recorder --help
+
+Usage:
+  audio-recorder [OPTION...] Command line arguments.
+
+Application Options:
+  -v, --version            Print program name and version.
+  -w, --show-window        Show application window at startup (0=hide main window, 1=force display of main window).
+  -i, --show-icon          Show icon on the system tray (0=hide icon, 1=force display of icon).
+  -r, --reset              Reset all settings and restart audio-recorder.
+  -d, --debug-signal       List signal level values in a terminal window.
+  -c, --command            Send a command to the recorder. Valid commands are; status,start,stop,pause,show,hide and quit.
+                           The status argument returns; 'not running','on','off' or 'paused'.
+
+Sample usage:
+audio-recorder --show-window=1 --show-icon=0
+
+The --version, --show-window, --show-icon options are self explanatory.
+The --debug-signal argument can help you to study the signal level from sound-card, microphones and webcams.
+The listing will print out several level values that can help to set the decibel (dB) value for the timer commands.
+The "Average RMS" value is the most important. The values are collected by src/listener.c module.
+
+The --command <arg> sends a command to the recorder. With this you can easily stop, start or pause 
+the recording from command line.
+
+The status command (--command status) returns the current recording state; "not running", "on", "off" or "paused".
+You can also test its exit value ($?). 
+0 = the program is up & running. Non-zero exit value means the program is not running.
+
+Sample usage:
+audio-recorder --command status
+echo $?
+
+status=$(audio-recorder --command status)
+echo $status
+
+audio-recorder --command start
+audio-recorder --command stop+show
+audio-recorder --command quit
+
+Ready-made Debian/Ubuntu packages for Ubuntu 15.10 and later:
+*************************************************************
+https://launchpad.net/~audio-recorder/+archive/ubuntu/ppa
+
+Packages for Ubuntu 15.04 and older Ubuntu versions:
+*************************************************************
+https://launchpad.net/~osmoma/+archive/audio-recorder
+
+Source code:
+************
+https://launchpad.net/~audio-recorder
+
+-- end --
+
