@@ -4,6 +4,8 @@ Priority: optional
 Maintainer: David Rabel <david.rabel@noresoft.com>
 Build-Depends: debhelper (>= 9), autotools-dev, dh-autoreconf
 Standards-Version: 3.9.8
+Vcs-Git: https://github.com/NoreSoft/audio-recorder.git
+Vcs-Browser: https://github.com/NoreSoft/audio-recorder
 Homepage: https://launchpad.net/audio-recorder
 
 Package: audio-recorder
