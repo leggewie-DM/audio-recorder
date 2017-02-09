@@ -1,4 +1,4 @@
 version=4
 
-https://launchpad.net/audio-recorder \
+https://launchpad.net/audio-recorder/+download \
   https://launchpad.net/.*download/audio-recorder[-_]([.\d]+)\.tar\.[gx]z
