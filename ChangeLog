@@ -1,3 +1,7 @@
+2017-02-09  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.5
+  * Bug #1660428. Icons names according to Freedesktop.org.
+
 2017-01-08  Osmo Antero <osmoma@gmail.com>
   * Version 1.9.4
   * Small updates concerning GTK3+ 3.22

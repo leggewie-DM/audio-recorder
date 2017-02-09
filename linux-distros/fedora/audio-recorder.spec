@@ -1,4 +1,4 @@
-%define releasenum 4
+%define releasenum 5
 
 Name: audio-recorder
 Version: 1.9

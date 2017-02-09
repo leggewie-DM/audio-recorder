@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rec-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-14 05:41+0000\n"
+"POT-Creation-Date: 2017-02-08 22:30+0000\n"
 "PO-Revision-Date: 2014-10-01 03:37+0000\n"
 "Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-15 06:09+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 "Language: en_AU\n"
 
 #: ../src/about.c:70
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Call from %s to %s %s"
 msgstr ""
 
-#: ../src/gst-vad.c:327 ../src/gst-recorder.c:839
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:835
 msgid "Cannot start reading from the stream/pipeline.\n"
 msgstr "Cannot start reading from the stream/pipeline.\n"
 
@@ -103,13 +103,13 @@ msgstr "Cannot start reading from the stream/pipeline.\n"
 #: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
 #: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
 #: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
-#: ../src/gst-recorder.c:854
+#: ../src/gst-recorder.c:850
 #, c-format
 msgid "Cannot create audio pipeline. %s.\n"
 msgstr ""
 
 #. Set err_msg
-#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:804
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:800
 #, c-format
 msgid "Cannot find audio element %s.\n"
 msgstr "Cannot find audio element %s.\n"
@@ -120,7 +120,7 @@ msgid "Cannot write to file \"%s\".\n"
 msgstr ""
 
 #. File name not given, set it to "Some filename"
-#: ../src/gst-recorder.c:963
+#: ../src/gst-recorder.c:959
 msgid "Some filename"
 msgstr ""
 
@@ -185,49 +185,49 @@ msgid "Start recording"
 msgstr ""
 
 #. Translators: This is a small right-click-menu on the [Close] button.
-#: ../src/main.c:733
+#: ../src/main.c:734
 msgid "Quit"
 msgstr ""
 
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1042
+#: ../src/main.c:1043
 msgid "File:"
 msgstr ""
 
 #. "Add to file" label.
 #. Translators: This is a GUI label. Keep it VERY short.
-#: ../src/main.c:1065
+#: ../src/main.c:1066
 msgid "Add."
 msgstr "Add."
 
 #. "Timer>" GUI expander.
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1076
+#: ../src/main.c:1077
 msgid "Timer."
 msgstr "Timer."
 
 #. "Audio settings>" GUI expander.
 #. Translators: This is a GUI label.
-#: ../src/main.c:1165
+#: ../src/main.c:1166
 msgid "Audio settings."
 msgstr ""
 
 #. Audio Source label (meaning Audio Source, the device or program that produces sound).
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1186
+#: ../src/main.c:1187
 msgid "Source:"
 msgstr ""
 
 #. Audio format; .OGG, .MP3, .WAV, etc. See media-profiles.c.
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1249
+#: ../src/main.c:1250
 msgid "Format:"
 msgstr ""
 
 #. [Additional settings] button.
 #. Translators: This is a label on the [Additional settings] button.
 #. Translators: This is a title in the additional settings dialog
-#: ../src/main.c:1326 ../src/settings.c:594
+#: ../src/main.c:1327 ../src/settings.c:594
 msgid "Additional settings"
 msgstr ""
 

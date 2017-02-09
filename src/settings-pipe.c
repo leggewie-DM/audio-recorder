@@ -387,7 +387,7 @@ GtkWidget *page_to_edit_pipelines() {
     gtk_grid_set_column_homogeneous(GTK_GRID(grid2), TRUE);
     gtk_grid_set_column_spacing(GTK_GRID(grid2), 1);
 
-    gtk_box_pack_start(GTK_BOX(vbox2), grid2, FALSE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(vbox2), grid2, FALSE, TRUE, 8);
     gtk_grid_set_row_spacing(GTK_GRID(grid2), 3);
 
     // Editable ComboBox with media-profiles

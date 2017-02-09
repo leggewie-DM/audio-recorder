@@ -1116,7 +1116,7 @@ void win_create_window() {
     gtk_container_add(GTK_CONTAINER(frame2), g_win.timer_text);
 
     // Timer [Save] button
-    g_win.timer_save_button = gtk_button_new_from_icon_name("gtk-save", GTK_ICON_SIZE_BUTTON);
+    g_win.timer_save_button = gtk_button_new_from_icon_name("document-save", GTK_ICON_SIZE_BUTTON);
     // Hide it
     gtk_widget_hide(g_win.timer_save_button);
     g_signal_connect(g_win.timer_save_button, "clicked", G_CALLBACK(win_timer_save_text_cb), NULL);
@@ -1146,7 +1146,7 @@ void win_create_window() {
     // The [Info] button
     GtkWidget *button0 = gtk_button_new();
     gtk_widget_show(button0);
-    GtkWidget *image = gtk_image_new_from_icon_name("gtk-info", GTK_ICON_SIZE_BUTTON);
+    GtkWidget *image = gtk_image_new_from_icon_name("dialog-information", GTK_ICON_SIZE_BUTTON);
     gtk_widget_show(image);
     gtk_button_set_always_show_image(GTK_BUTTON(button0), TRUE);
     gtk_button_set_image(GTK_BUTTON(button0), image);
@@ -1237,7 +1237,7 @@ void win_create_window() {
     // Add [Reload] button
     button0 = gtk_button_new();
     gtk_widget_show(button0);
-    image = gtk_image_new_from_icon_name("gtk-refresh", GTK_ICON_SIZE_BUTTON);
+    image = gtk_image_new_from_icon_name("view-refresh", GTK_ICON_SIZE_BUTTON);
     gtk_widget_show(image);
     gtk_button_set_always_show_image(GTK_BUTTON(button0), TRUE);
 
@@ -1314,7 +1314,7 @@ void win_create_window() {
     gtk_widget_show(hbox4);
     gtk_box_pack_start(GTK_BOX(vbox0), hbox4, FALSE, TRUE, 0);
 
-    button0 = gtk_button_new_from_icon_name("gtk-close", GTK_ICON_SIZE_BUTTON);
+    button0 = gtk_button_new_from_icon_name("window-close", GTK_ICON_SIZE_BUTTON);
     gtk_button_set_always_show_image(GTK_BUTTON(button0), TRUE);
     gtk_widget_show(button0);
     gtk_box_pack_end(GTK_BOX(hbox4), button0, FALSE, FALSE, 0);
