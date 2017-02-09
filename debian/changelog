@@ -2,6 +2,7 @@ audio-recorder (1.9.5-1) unstable; urgency=medium
 
   * Edited delete-extra-COPYING-file patch: No need to delete the file itself.
   * Watch file added
+  * Man page is now part of upstream
   * New upstream version 1.9.5
 
  -- David Rabel <david.rabel@noresoft.com>  Thu, 09 Feb 2017 20:17:50 +0100
