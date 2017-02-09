@@ -7,7 +7,7 @@ Subject: Delete extra COPYING file in data/
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 diff --git a/data/Makefile.am b/data/Makefile.am
-index 4876934..ceae183 100644
+index 192f690..77f7cf3 100644
 --- a/data/Makefile.am
 +++ b/data/Makefile.am
 @@ -5,8 +5,7 @@
