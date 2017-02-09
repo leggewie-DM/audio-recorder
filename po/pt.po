@@ -3,15 +3,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-14 05:41+0000\n"
+"POT-Creation-Date: 2017-02-08 22:30+0000\n"
 "PO-Revision-Date: 2014-10-27 17:35+0000\n"
 "Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-15 06:09+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 "Language: pt\n"
 
 #: ../src/about.c:70
@@ -95,7 +95,7 @@ msgstr "Chamadas do Skype"
 msgid "Call from %s to %s %s"
 msgstr "Chamada de %s para %s %s"
 
-#: ../src/gst-vad.c:327 ../src/gst-recorder.c:839
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:835
 msgid "Cannot start reading from the stream/pipeline.\n"
 msgstr "Não é possível iniciar leitura do stream/pipeline.\n"
 
@@ -104,13 +104,13 @@ msgstr "Não é possível iniciar leitura do stream/pipeline.\n"
 #: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
 #: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
 #: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
-#: ../src/gst-recorder.c:854
+#: ../src/gst-recorder.c:850
 #, c-format
 msgid "Cannot create audio pipeline. %s.\n"
 msgstr "Não é possível criar canal de áudio. %s.\n"
 
 #. Set err_msg
-#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:804
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:800
 #, c-format
 msgid "Cannot find audio element %s.\n"
 msgstr "Não é possível encontrar elemento de áudio %s.\n"
@@ -121,7 +121,7 @@ msgid "Cannot write to file \"%s\".\n"
 msgstr "Não é possível escrever no arquivo \"%s\".\n"
 
 #. File name not given, set it to "Some filename"
-#: ../src/gst-recorder.c:963
+#: ../src/gst-recorder.c:959
 msgid "Some filename"
 msgstr "Nome do arquivo"
 
@@ -193,49 +193,49 @@ msgid "Start recording"
 msgstr "Iniciar gravação"
 
 #. Translators: This is a small right-click-menu on the [Close] button.
-#: ../src/main.c:733
+#: ../src/main.c:734
 msgid "Quit"
 msgstr "Sair"
 
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1042
+#: ../src/main.c:1043
 msgid "File:"
 msgstr "Arquivo:"
 
 #. "Add to file" label.
 #. Translators: This is a GUI label. Keep it VERY short.
-#: ../src/main.c:1065
+#: ../src/main.c:1066
 msgid "Add."
 msgstr "Adicionar."
 
 #. "Timer>" GUI expander.
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1076
+#: ../src/main.c:1077
 msgid "Timer."
 msgstr "Tempo."
 
 #. "Audio settings>" GUI expander.
 #. Translators: This is a GUI label.
-#: ../src/main.c:1165
+#: ../src/main.c:1166
 msgid "Audio settings."
 msgstr "Configurações de áudio."
 
 #. Audio Source label (meaning Audio Source, the device or program that produces sound).
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1186
+#: ../src/main.c:1187
 msgid "Source:"
 msgstr "Fonte:"
 
 #. Audio format; .OGG, .MP3, .WAV, etc. See media-profiles.c.
 #. Translators: This is a GUI label. Keep it short.
-#: ../src/main.c:1249
+#: ../src/main.c:1250
 msgid "Format:"
 msgstr "Formato:"
 
 #. [Additional settings] button.
 #. Translators: This is a label on the [Additional settings] button.
 #. Translators: This is a title in the additional settings dialog
-#: ../src/main.c:1326 ../src/settings.c:594
+#: ../src/main.c:1327 ../src/settings.c:594
 msgid "Additional settings"
 msgstr "Configurações adicionais"
 

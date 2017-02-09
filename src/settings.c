@@ -659,7 +659,7 @@ void win_settings_show_dialog(GtkWindow *parent) {
     gtk_entry_set_invisible_char(GTK_ENTRY(file_name_pattern), 9679);
 
     button0 = gtk_button_new();
-    GtkWidget *image = gtk_image_new_from_icon_name("gtk-info", GTK_ICON_SIZE_BUTTON);
+    GtkWidget *image = gtk_image_new_from_icon_name("dialog-information", GTK_ICON_SIZE_BUTTON);
     gtk_button_set_always_show_image(GTK_BUTTON(button0), TRUE);
     gtk_button_set_image(GTK_BUTTON(button0), image);
     g_signal_connect(button0, "clicked", G_CALLBACK(win_settings_show_filename_help), NULL);

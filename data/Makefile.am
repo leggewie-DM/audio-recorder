@@ -13,6 +13,9 @@ desktopdir = $(datadir)/applications
 dist_desktop_DATA = \
     audio-recorder.desktop
 
+# Install man page
+man_MANS = audio-recorder.1
+
 # Makefile rules for schema handling (see data/org.gnome.audio-recorder.gschema.xml and src/dconf.c)
 @INTLTOOL_XML_NOMERGE_RULE@
 gsettings_SCHEMAS = org.gnome.audio-recorder.gschema.xml
