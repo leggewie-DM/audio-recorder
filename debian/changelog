@@ -9,6 +9,6 @@ audio-recorder (1.9.5-1) unstable; urgency=medium
 
 audio-recorder (1.9.4-1) unstable; urgency=medium
 
-  * Initial release. Closes: #830207, LP: 1391951
+  * Initial release. Closes: #830207, LP: #1391951
 
  -- David Rabel <david.rabel@noresoft.com>  Wed, 08 Feb 2017 22:50:15 +0100
