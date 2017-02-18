@@ -1,6 +1,6 @@
 From: David Rabel <david.rabel@noresoft.com>
 Date: Wed, 8 Feb 2017 22:52:01 +0100
-Subject: Delete extra COPYING file in data/
+Subject: Do not install extra COPYING file in data/
 
 ---
  data/Makefile.am | 3 +--
