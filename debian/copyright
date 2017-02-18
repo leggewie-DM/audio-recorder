@@ -7,6 +7,10 @@ Copyright: 2010-2017 Osmo Antero <osmoma@gmail.com>
            2010-2017 Team audio-recorder
 License: GPL-3+
 
+Files: src/gst-recorder.c
+Copyright: 2010-2017 Osmo Antero <osmoma@gmail.com>
+           2002      Iain Holmes
+
 Files: po/*
 Copyright: 2010-2017 Rosetta Contributors and Canonical Ltd 2012
 License: GPL-3+
