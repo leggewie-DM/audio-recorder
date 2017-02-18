@@ -3,12 +3,25 @@ Upstream-Name: audio-recorder
 Source: <https://launchpad.net/audio-recorder>
 
 Files: *
-Copyright: 2011-2017 Osmo Antero <osmoma@gmail.com>
-           2011-2017 The entire Linux-community
+Copyright: 2010-2017 Osmo Antero <osmoma@gmail.com>
+           2010-2017 Team audio-recorder
 License: GPL-3+
+
+Files: po/*
+Copyright: 2010-2017 Rosetta Contributors and Canonical Ltd 2012
+License: GPL-3+
+
+Files: po/Makefile.in.in
+Copyright: 1995-1997 Ulrich Drepper <drepper@gnu.ai.mit.edu>
+           2004-2008 Rodney Dawes <dobey.pwns@gmail.com>
+License:
+ This file may be copied and used freely without restrictions. It may
+ be used in projects which are not available under a GNU Public License,
+ but wich still want to provice support for the GNU gettext functionality.
 
 Files: debian/*
 Copyright: 2017 David Rabel <david.rabel@noresoft.com>
+           2017 Rolf Leggewie <foss@rolf.leggewie.biz>
 License: GPL-3+
 
 License: GPL-3+
