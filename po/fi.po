@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rec-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 22:30+0000\n"
-"PO-Revision-Date: 2015-02-23 23:11+0000\n"
-"Last-Translator: Aleksi Kinnunen <Unknown>\n"
+"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"PO-Revision-Date: 2017-02-11 10:41+0000\n"
+"Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: fi\n"
 
@@ -259,7 +259,7 @@ msgstr "(Mikrofoni)"
 
 #: ../src/gst-devices.c:378
 msgid "(Audio output)"
-msgstr ""
+msgstr "(Kovaääninen)"
 
 #. Program name.
 #. Translators: This is the name of this Audio Recorder program.
@@ -351,7 +351,7 @@ msgstr "%s:"
 #. Translators: This is a label in the [Additional settings] dialog
 #: ../src/settings.c:345
 msgid "Media players (RhythmBox, Banshee, etc.)"
-msgstr "Soittimet (RhythmBox, Banshee, jne.)"
+msgstr "Soittimet (RhythmBox, MPlayer, jne.)"
 
 #. Translators: This is a label/help text in the [Additional settings] dialog
 #: ../src/settings.c:350
@@ -386,36 +386,36 @@ msgid "Filename format:"
 msgstr "Nimen muoto:"
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:711
+#: ../src/settings.c:712
 msgid "Keep window on top."
 msgstr "Pidä ikkuna aina päällimmäisenä."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:727
+#: ../src/settings.c:728
 msgid "Show icon on the system tray."
 msgstr "Näytä kuvake ilmaisinalueella."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:745
+#: ../src/settings.c:746
 msgid "Auto-start this application at login."
 msgstr "Käynnistä tämä sovellus automaattisesti sisäänkirjautuessa."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:770
+#: ../src/settings.c:771
 msgid "Record ringing sound for Skype."
 msgstr "Nauhoita Skypen soittoääni."
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:788
+#: ../src/settings.c:789
 msgid "Device settings"
 msgstr "Laiteasetukset"
 
-#: ../src/settings.c:790
+#: ../src/settings.c:791
 msgid "Installed items:"
 msgstr "Asennetut tuotteet:"
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:853
+#: ../src/settings.c:854
 msgid "Recording commands"
 msgstr "Äänitys komennot"
 
@@ -450,6 +450,8 @@ msgid ""
 "# Use the pactl tool to list all available audio (input) devices in your "
 "system."
 msgstr ""
+"# pactl kommando auttaa löytämäan kaikki saatavilla olevat (audio) "
+"äänityslaitteet."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:331
@@ -460,7 +462,7 @@ msgstr "Tämä komento äänittää %s tiedostoon."
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:334
 msgid "# Press Control-C to terminate the recording."
-msgstr ""
+msgstr "# Paina Control-C tallennuksen lopettamiseksi."
 
 #. Editable ComboBox with media-profiles
 #. "Title:" label
@@ -475,16 +477,17 @@ msgstr "Nimi:"
 msgid "File extension:"
 msgstr "Tiedostopääte:"
 
-#. Names of GStreamer packages.
-#. Translators: This is a GUI label (package description). Keep short.
+#. GStreamer pipeline. Press the [Show cmd] button to see the _entire_ Gstreamer pipeline.
+#. Run & test the pipeline in a terminal window. Ok?
+#. Translators: This is a GUI label (for GStreamer pipeline). Keep it short.
 #: ../src/settings-pipe.c:422
-msgid "Package:"
-msgstr "Paketti:"
+msgid "Command:"
+msgstr "Komento:"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:439
 msgid "Show cmd"
-msgstr "Näytä komento"
+msgstr "Näytä/Testaa"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:444

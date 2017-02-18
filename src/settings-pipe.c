@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Linux community.
+ * Copyright (c) Team audio-recorder.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -416,10 +416,10 @@ GtkWidget *page_to_edit_pipelines() {
     g_file_ext = gtk_entry_new();
     gtk_grid_attach_next_to(GTK_GRID(grid2), g_file_ext, label0, GTK_POS_RIGHT, 2, 1);
 
-    // Names of GStreamer packages.
-
-    // Translators: This is a GUI label (package description). Keep short.
-    label0 = gtk_label_new(_("Package:"));
+    // GStreamer pipeline. Press the [Show cmd] button to see the _entire_ Gstreamer pipeline.
+    // Run & test the pipeline in a terminal window. Ok?
+    // Translators: This is a GUI label (for GStreamer pipeline). Keep it short.
+    label0 = gtk_label_new(_("Command:"));
     gtk_widget_set_halign(label0, GTK_ALIGN_START);
     gtk_grid_attach(GTK_GRID(grid2), label0, 0, 2, 1, 1);
 
