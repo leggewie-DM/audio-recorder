@@ -22,7 +22,7 @@ Copyright: 1995-1997 Ulrich Drepper <drepper@gnu.ai.mit.edu>
 License: Other
  This file may be copied and used freely without restrictions. It may
  be used in projects which are not available under a GNU Public License,
- but wich still want to provice support for the GNU gettext functionality.
+ but which still want to provide support for the GNU gettext functionality.
 
 Files: debian/*
 Copyright: 2017 David Rabel <david.rabel@noresoft.com>
