@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 22:30+0000\n"
-"PO-Revision-Date: 2014-10-27 17:35+0000\n"
+"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"PO-Revision-Date: 2017-02-11 10:47+0000\n"
 "Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: pt\n"
 
@@ -34,7 +34,7 @@ msgstr "Detalhes da instalação"
 
 #: ../src/about.c:154
 msgid "OK"
-msgstr ""
+msgstr "Aceitar"
 
 #. 3) Add "User defined audio source" (user defined group of devices, selected for recording)
 #. ----------------------------
@@ -246,6 +246,8 @@ msgid ""
 "Please install additional plugins (from gstreamer1.0-plugins-* package) to "
 "support the %s format.\n"
 msgstr ""
+"Por-favor, instale plugins adicionais (do pacote gstreamer 1.0-plugins- *) "
+"para suportar o formato %s.\n"
 
 #. Add "Microphone" to the device description
 #: ../src/gst-devices.c:298
@@ -303,13 +305,13 @@ msgstr "Exibir gravações salvas"
 #. menu_item = gtk_image_menu_item_new_from_stock(GTK_STOCK_ABOUT, NULL);
 #: ../src/systray-icon.c:297
 msgid "_About"
-msgstr ""
+msgstr "_Sobre"
 
 #. Deprecated in GTK 3.10
 #. menu_item = gtk_image_menu_item_new_from_stock(GTK_STOCK_QUIT, NULL);
 #: ../src/systray-icon.c:311
 msgid "_Quit"
-msgstr ""
+msgstr "_Sair"
 
 #. no setup function
 #. no user data
@@ -348,7 +350,7 @@ msgstr "Dispositivos de gravação para %s:"
 #. Translators: This is a label in the [Additional settings] dialog
 #: ../src/settings.c:345
 msgid "Media players (RhythmBox, Banshee, etc.)"
-msgstr "Leitores de mídia (RhythmBox, Banshee, etc.)"
+msgstr "Leitores de mídia (RhythmBox, MPlayer, etc.)"
 
 #. Translators: This is a label/help text in the [Additional settings] dialog
 #: ../src/settings.c:350
@@ -384,63 +386,63 @@ msgid "Filename format:"
 msgstr "Formato do nome:"
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:711
+#: ../src/settings.c:712
 msgid "Keep window on top."
-msgstr ""
+msgstr "Mantenha a janela no topo."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:727
+#: ../src/settings.c:728
 msgid "Show icon on the system tray."
 msgstr "Mostrar ícone na área de notificação."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:745
+#: ../src/settings.c:746
 msgid "Auto-start this application at login."
 msgstr "Auto-iniciar este aplicativo no login."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:770
+#: ../src/settings.c:771
 msgid "Record ringing sound for Skype."
 msgstr "Gravar som de toque para Skype."
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:788
+#: ../src/settings.c:789
 msgid "Device settings"
 msgstr "Configurações do dispositivo"
 
-#: ../src/settings.c:790
+#: ../src/settings.c:791
 msgid "Installed items:"
 msgstr "Itens instalados:"
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:853
+#: ../src/settings.c:854
 msgid "Recording commands"
-msgstr ""
+msgstr "Comandos de gravação"
 
 #. Show dialog with the GStreamer command
 #: ../src/settings-pipe.c:256
 msgid "Recording command"
-msgstr ""
+msgstr "Comando de gravação"
 
 #: ../src/settings-pipe.c:259
 msgid "_OK"
-msgstr ""
+msgstr "_Aceitar"
 
 #. Translators: This is a filename "test.xxx".
 #: ../src/settings-pipe.c:304
 #, c-format
 msgid "test.%s"
-msgstr ""
+msgstr "teste.%s"
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:318
 msgid "# Copy and paste the following command to a terminal window."
-msgstr ""
+msgstr "# Copie e cole o seguinte comando para uma janela de terminal."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:321
 msgid "# The devices are taken from the GUI (main window)."
-msgstr ""
+msgstr "# Os dispositivos são tomados da GUI (janela principal)."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:324
@@ -448,58 +450,61 @@ msgid ""
 "# Use the pactl tool to list all available audio (input) devices in your "
 "system."
 msgstr ""
+"# Use a ferramenta pactl para listar todos os dispositivos de áudio "
+"(entrada) disponíveis no seu sistema."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:331
 #, c-format
 msgid "# This command will record to %s file."
-msgstr ""
+msgstr "# Este comando vai gravar para o arquivo %s."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:334
 msgid "# Press Control-C to terminate the recording."
-msgstr ""
+msgstr "# Pressione control-C para terminar a gravação."
 
 #. Editable ComboBox with media-profiles
 #. "Title:" label
 #. Translators: This is a GUI label. Keep it short.
 #: ../src/settings-pipe.c:397
 msgid "Title:"
-msgstr ""
+msgstr "Título:"
 
 #. File extension.
 #. Translators: This is a GUI label. Keep it short.
 #: ../src/settings-pipe.c:412
 msgid "File extension:"
-msgstr ""
+msgstr "Extensão de arquivo:"
 
-#. Names of GStreamer packages.
-#. Translators: This is a GUI label (package description). Keep short.
+#. GStreamer pipeline. Press the [Show cmd] button to see the _entire_ Gstreamer pipeline.
+#. Run & test the pipeline in a terminal window. Ok?
+#. Translators: This is a GUI label (for GStreamer pipeline). Keep it short.
 #: ../src/settings-pipe.c:422
-msgid "Package:"
-msgstr ""
+msgid "Command:"
+msgstr "Comando:"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:439
 msgid "Show cmd"
-msgstr ""
+msgstr "Mostrar/Testar"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:444
 msgid "Reset"
-msgstr ""
+msgstr "Repor"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:456
 msgid "New"
-msgstr ""
+msgstr "Novo"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:461
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:466
 msgid "Save"
-msgstr ""
+msgstr "Gravar"

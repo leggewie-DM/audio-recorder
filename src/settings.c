@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Linux community.
+ * Copyright (c) Team audio-recorder.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -625,7 +625,7 @@ void win_settings_show_dialog(GtkWindow *parent) {
     gtk_grid_set_row_homogeneous(GTK_GRID(grid0), FALSE);
     gtk_grid_set_column_homogeneous(GTK_GRID(grid0), FALSE);
 
-    gtk_box_pack_start(GTK_BOX(vbox0), grid0, FALSE, TRUE, 0);
+    gtk_box_pack_start(GTK_BOX(vbox0), grid0, FALSE, TRUE, 8);
     gtk_grid_set_row_spacing(GTK_GRID(grid0), 3);
 
     // "Folder name:" label
@@ -700,6 +700,7 @@ Replace above gtk_image_new_from_icon_name() with:
     // Create GtkGrid for some GtkSwitch'es
     GtkWidget *grid1 = gtk_grid_new();
     gtk_grid_set_row_homogeneous(GTK_GRID(grid1), FALSE);
+    gtk_grid_set_row_spacing(GTK_GRID(grid1), 3);
 
     gtk_grid_attach(GTK_GRID(grid0), grid1, 1, 5, 5, 5);
 

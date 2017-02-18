@@ -1,3 +1,11 @@
+2017-02-15  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.7
+  * Minor translation updates.
+
+2017-02-10  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.6
+  * Fixing GUI labels and translations.
+
 2017-02-09  Osmo Antero <osmoma@gmail.com>
   * Version 1.9.5
   * Bug #1660428. Icons names according to Freedesktop.org.

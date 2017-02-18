@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rec-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 22:30+0000\n"
-"PO-Revision-Date: 2016-12-15 23:12+0000\n"
-"Last-Translator: Tobias Bannert <tobannert@gmail.com>\n"
+"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"PO-Revision-Date: 2017-02-14 12:30+0000\n"
+"Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: de\n"
 
@@ -175,8 +175,8 @@ msgid ""
 "'not running','on','off' or 'paused'."
 msgstr ""
 "Einen Befehl an den Rekorder übergeben. Gültige Befehle sind: status, start, "
-"stop, pause, show, hide und quit. Die Rückmeldungen sind: »not running«, "
-"»on«, »off« oder »paused«."
+"stop, pause, show, hide und quit. Die Status-Rückmeldungen sind: »not "
+"running«, »on«, »off« oder »paused«."
 
 #. Translators: This is a button label, also used in the menu.
 #. Stop recording.
@@ -213,7 +213,7 @@ msgstr "Datei:"
 #. Translators: This is a GUI label. Keep it VERY short.
 #: ../src/main.c:1066
 msgid "Add."
-msgstr "Hinzufügen"
+msgstr "Hinzufügen."
 
 #. "Timer>" GUI expander.
 #. Translators: This is a GUI label. Keep it short.
@@ -392,36 +392,36 @@ msgid "Filename format:"
 msgstr "Dateinamen-Format:"
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:711
+#: ../src/settings.c:712
 msgid "Keep window on top."
 msgstr "Fenster im Vordergrund behalten."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:727
+#: ../src/settings.c:728
 msgid "Show icon on the system tray."
 msgstr "Symbol im Benachrichtigungsfeld anzeigen."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:745
+#: ../src/settings.c:746
 msgid "Auto-start this application at login."
-msgstr "Automatisch bei der Anmeldung starten"
+msgstr "Automatisch bei der Anmeldung starten."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:770
+#: ../src/settings.c:771
 msgid "Record ringing sound for Skype."
-msgstr "Klingelton für Skype aufzeichnen"
+msgstr "Klingelton für Skype aufzeichnen."
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:788
+#: ../src/settings.c:789
 msgid "Device settings"
 msgstr "Geräteeinstellungen"
 
-#: ../src/settings.c:790
+#: ../src/settings.c:791
 msgid "Installed items:"
 msgstr "Installierte Elemente:"
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:853
+#: ../src/settings.c:854
 msgid "Recording commands"
 msgstr "Aufnahmebefehle"
 
@@ -443,7 +443,7 @@ msgstr "test.%s"
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:318
 msgid "# Copy and paste the following command to a terminal window."
-msgstr "# Bitte den folgenden Befehle in ein Terminalfenster kopieren."
+msgstr "# Bitte den folgenden Befehl in ein Terminalfenster kopieren."
 
 #. Translators: This is shown in Additional settings -> Recording commands -> [Show Cmd].
 #: ../src/settings-pipe.c:321
@@ -484,11 +484,12 @@ msgstr "Titel:"
 msgid "File extension:"
 msgstr "Dateiendung:"
 
-#. Names of GStreamer packages.
-#. Translators: This is a GUI label (package description). Keep short.
+#. GStreamer pipeline. Press the [Show cmd] button to see the _entire_ Gstreamer pipeline.
+#. Run & test the pipeline in a terminal window. Ok?
+#. Translators: This is a GUI label (for GStreamer pipeline). Keep it short.
 #: ../src/settings-pipe.c:422
-msgid "Package:"
-msgstr "Paket:"
+msgid "Command:"
+msgstr "Kommando:"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:439

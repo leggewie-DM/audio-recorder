@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rec-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 22:30+0000\n"
-"PO-Revision-Date: 2015-11-10 11:34+0000\n"
-"Last-Translator: Jean-Marc <Unknown>\n"
+"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"PO-Revision-Date: 2017-02-11 14:15+0000\n"
+"Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-09 05:37+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: fr\n"
 
@@ -394,36 +394,36 @@ msgid "Filename format:"
 msgstr "Format de nom de fichier :"
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:711
+#: ../src/settings.c:712
 msgid "Keep window on top."
 msgstr "Conserver la fenêtre au premier plan."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:727
+#: ../src/settings.c:728
 msgid "Show icon on the system tray."
 msgstr "Afficher une icône dans la barre des notifications."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:745
+#: ../src/settings.c:746
 msgid "Auto-start this application at login."
 msgstr "Démarrer automatiquement cette application au démarrage."
 
 #. Translators: This is a label for an ON/OFF switch.
-#: ../src/settings.c:770
+#: ../src/settings.c:771
 msgid "Record ringing sound for Skype."
 msgstr "Enregistrer la sonnerie d'appel de Skype."
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:788
+#: ../src/settings.c:789
 msgid "Device settings"
 msgstr "Paramètres du périphérique"
 
-#: ../src/settings.c:790
+#: ../src/settings.c:791
 msgid "Installed items:"
 msgstr "Éléments installés :"
 
 #. Translators: This is a [Tab-page] in the [Additional settings] dialog.
-#: ../src/settings.c:853
+#: ../src/settings.c:854
 msgid "Recording commands"
 msgstr "Commandes d'enregistrement"
 
@@ -488,11 +488,12 @@ msgstr "Titre :"
 msgid "File extension:"
 msgstr "Extension de fichier :"
 
-#. Names of GStreamer packages.
-#. Translators: This is a GUI label (package description). Keep short.
+#. GStreamer pipeline. Press the [Show cmd] button to see the _entire_ Gstreamer pipeline.
+#. Run & test the pipeline in a terminal window. Ok?
+#. Translators: This is a GUI label (for GStreamer pipeline). Keep it short.
 #: ../src/settings-pipe.c:422
-msgid "Package:"
-msgstr "Paquet :"
+msgid "Command:"
+msgstr "Commande:"
 
 #. Translators: Button label in Additional settings -> Recording commands.
 #: ../src/settings-pipe.c:439

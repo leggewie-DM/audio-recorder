@@ -137,7 +137,7 @@ Translating audio-recorder.pot to a new language.
 
 Translate on the Launchpad.
 Use Launchpad for the translations. Browse to https://translations.launchpad.net/audio-recorder
-Login and open a new language file.
+Login and open/update the translations.
 
 Important: The translations from the Launchpad are automatically copied/synchronized to the source code's po/ directory. 
 Launchpad does this transfer once a day.
@@ -156,25 +156,46 @@ make update-po
 
 It creates binary language file (*.gmo) of each *.po.
 
-Testing the program with new languages:
-You can easily test the program with various languages (language files). 
-Simply set the LANG= variable before starting the program. 
-Eg. this will start the audio recorder with Dutch (nl) language setting.
-$ LANG=nl_NL.UTF-8 audio-recorder
+Testing the program with various languages:
+*******************************************
+First, you must install the global language packages in the System Settings -> Languages Dialog !
+Press the [Install/Remove languages] button and choose/install the appropriate languages.
 
-This will start it with Norwegian Bokmål. Put all this on one line.
-LANG=nb_NO.UTF-8 audio-recorder
+Use the "locale -a" command to list all supported languages in your system.
+$ locale -a
+C.UTF-8
+de_AT.utf8
+...
+en_GB.utf8
+fi_FI.utf8
+nb_NO.utf8
+pt_PT.utf8
 
-And Finland/Finnish
-LANG=fi_FI.UTF-8 audio-recorder
+Please check if your target language appears in the list.
 
-Of course you must generate and install the language files with
-make
-sudo make install
+Now you can test Audio-recorder with the supported languages.
+You simply set the tonque before starting the recorder. 
+For example:
 
-Notice: You must also install the same language in system settings!
-Look for the "Language support" dialog. Install all necessary languages there.
-You can set the current language in the login-screen (at least in the earlier version of GNOME).
+# Changing language of audio-recorder to Norwegian Bookmål
+$ export L=nb_NO.UTF-8
+$ LANG=$L; LC_ALL=$L; LANGUAGE=$L audio-recorder
+
+# Changing language to German
+$ export L=de_DE.UTF-8
+$ LANG=$L; LC_ALL=$L; LANGUAGE=$L audio-recorder
+
+# Changing lingo to English GB
+$ export L=en_GB.UTF-8
+$ LANG=$L; LC_ALL=$L; LANGUAGE=$L audio-recorder
+
+Notice:
+You may also set the language for the ENTIRE DESKTOP in the System-Settings, User Definition dialog.
+Some (not Ubuntu/Unity) systems may let you set the language in the login-screen (Log-out / Log-in).
+
+Of course, the above commands require that audio-recorder has been translated and packaged with the actual tonques.
+Please see: https://translations.launchpad.net/audio-recorder
+----
 
 4) You may also translate the HTML-files (help files) in the audio-recorder/data directory.
 If not translated, the program will show the original english text.
