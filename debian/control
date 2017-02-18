@@ -3,7 +3,18 @@ Section: utils
 Priority: optional
 Maintainer: David Rabel <david.rabel@noresoft.com>
 Uploaders: Rolf Leggewie <foss@rolf.leggewie.biz>
-Build-Depends: debhelper (>= 9), dh-autoreconf, gettext, intltool, pkg-config, libgtk-3-dev, libglib2.0-dev, libgstreamer1.0-dev, libdbus-1-dev, libappindicator3-dev, libgstreamer-plugins-base1.0-dev
+Build-Depends:
+ debhelper (>= 9),
+ dh-autoreconf,
+ gettext,
+ intltool,
+ libappindicator3-dev,
+ libdbus-1-dev,
+ libglib2.0-dev,
+ libgstreamer-plugins-base1.0-dev,
+ libgstreamer1.0-dev,
+ libgtk-3-dev,
+ pkg-config
 Standards-Version: 3.9.8
 Vcs-Git: https://github.com/NoreSoft/audio-recorder.git
 Vcs-Browser: https://github.com/NoreSoft/audio-recorder
@@ -11,12 +22,18 @@ Homepage: https://launchpad.net/audio-recorder
 
 Package: audio-recorder
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, pulseaudio, gstreamer1.0-pulseaudio, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good
+Depends:
+ gstreamer1.0-plugins-base,
+ gstreamer1.0-plugins-good,
+ gstreamer1.0-pulseaudio,
+ pulseaudio,
+ ${misc:Depends},
+ ${shlibs:Depends}
 Description: Audio recorder for GNOME and Unity Desktops
- This program allows you to record your favourite music or audio to a file. 
- It can record audio from your system soundcard, microphones, browsers and 
- webcams. Put simply; if it plays out of your loudspeakers you can record it. 
- This program has a timer that can start, stop or pause recording on certain 
- conditions such as audio level, file size and clock time. This recorder can 
- automatically record your Skype calls. It supports several audio (output) 
+ This program allows you to record your favourite music or audio to a file.
+ It can record audio from your system soundcard, microphones, browsers and
+ webcams. Put simply; if it plays out of your loudspeakers you can record it.
+ This program has a timer that can start, stop or pause recording on certain
+ conditions such as audio level, file size and clock time. This recorder can
+ automatically record your Skype calls. It supports several audio (output)
  formats such as OGG audio, Flac, MP3 and WAV.
