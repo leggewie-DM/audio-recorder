@@ -1,5 +1,5 @@
-audio-recorder (1.9.7-1) unstable; urgency=medium
+audio-recorder (2.0.2-0rl1) unstable; urgency=medium
 
   * Initial release. Closes: #830207, LP: #1391951
 
- -- David Rabel <david.rabel@noresoft.com>  Sat, 18 Feb 2017 11:19:15 +0100
+ -- Rolf Leggewie <foss@rolf.leggewie.biz>  Fri, 06 Oct 2017 02:19:53 +0800
