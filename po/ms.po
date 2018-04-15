@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: audio-recorder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"POT-Creation-Date: 2017-10-21 14:05+0100\n"
 "PO-Revision-Date: 2015-09-29 00:51+0000\n"
 "Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
+"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
-"Language: ms\n"
+"X-Launchpad-Export-Date: 2017-10-13 05:25+0000\n"
+"X-Generator: Launchpad (build 18474)\n"
 
 #: ../src/about.c:70
 msgid ""
@@ -100,7 +100,7 @@ msgstr "Panggilan Skype"
 msgid "Call from %s to %s %s"
 msgstr "Panggilan dari %s kepada %s %s"
 
-#: ../src/gst-vad.c:327 ../src/gst-recorder.c:835
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:836
 msgid "Cannot start reading from the stream/pipeline.\n"
 msgstr "Tidak dapat mula membaca dari garis paip/strim.\n"
 
@@ -109,24 +109,24 @@ msgstr "Tidak dapat mula membaca dari garis paip/strim.\n"
 #: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
 #: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
 #: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
-#: ../src/gst-recorder.c:850
+#: ../src/gst-recorder.c:851
 #, c-format
 msgid "Cannot create audio pipeline. %s.\n"
 msgstr "Tidak dapat cipta garis paip audio. %s\n"
 
 #. Set err_msg
-#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:800
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:801
 #, c-format
 msgid "Cannot find audio element %s.\n"
 msgstr "Tidak dapat cari unsur audio %s\n"
 
-#: ../src/gst-recorder.c:251
+#: ../src/gst-recorder.c:252
 #, c-format
 msgid "Cannot write to file \"%s\".\n"
 msgstr "Tidak dapat tulis ke fail \"%s\".\n"
 
 #. File name not given, set it to "Some filename"
-#: ../src/gst-recorder.c:959
+#: ../src/gst-recorder.c:960
 msgid "Some filename"
 msgstr "Beberapa nama fail"
 
@@ -167,13 +167,13 @@ msgstr "Senarai nilai aras isyarat dalam tetingkap terminal."
 
 #: ../src/main.c:104
 msgid ""
-"Send a command to the recorder. Valid commands are; "
-"status,start,stop,pause,show,hide and quit. The status argument returns; "
-"'not running','on','off' or 'paused'."
+"Send a command to the recorder. Valid commands are; status,start,stop,pause,"
+"show,hide and quit. The status argument returns; 'not running','on','off' or "
+"'paused'."
 msgstr ""
-"Hantar perintah ke perakam. Perintah yang sah adalah; "
-"status,mula,henti,jeda,papar, sembunyi dan keluar. Argumen status "
-"kembalikan; 'tidak berjalan','hidup','mati' atau 'dijedakan'."
+"Hantar perintah ke perakam. Perintah yang sah adalah; status,mula,henti,jeda,"
+"papar, sembunyi dan keluar. Argumen status kembalikan; 'tidak "
+"berjalan','hidup','mati' atau 'dijedakan'."
 
 #. Translators: This is a button label, also used in the menu.
 #. Stop recording.

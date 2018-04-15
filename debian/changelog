@@ -1,0 +1,486 @@
+audio-recorder (2.0.2~artful) artful; urgency=low
+  * Version 2.0.2
+  * Removed unnecessary files from the source. 
+
+ -- moma <osmoma@gmail.com>  Sat, 21 Oct 2017 10:00:00  +0200
+
+audio-recorder (2.0.1~artful) artful; urgency=low
+  * Version 2.0.1
+  * Legalizing for Debian. Set a proper copyright text in all source files.
+
+ -- moma <osmoma@gmail.com>  Thu, 05 Oct 2017 10:00:00  +0200
+
+audio-recorder (2.0.0~artful) artful; urgency=low
+  * Version 2.0.0
+  * Recompiling for Ubuntu 17.10 and other major distros released in October-2017.
+
+ -- moma <osmoma@gmail.com>  Sat, 16 Sep 2017 10:00:00  +0200
+
+audio-recorder (1.9.8~artful) artful; urgency=low
+  * Version 1.9.8
+  * Some language updates.	
+  * Recompiling for Ubuntu 17.10 and other major distros released in October-2017.
+
+ -- moma <osmoma@gmail.com>  Sat, 16 Sep 2017 10:00:00  +0200
+
+audio-recorder (1.9.7~zesty) zesty; urgency=low
+  * Version 1.9.7
+  * Minor translation updates.
+
+ -- moma <osmoma@gmail.com>  Wed, 15 Feb 2017 10:00:00  +0200
+
+audio-recorder (1.9.6~zesty) zesty; urgency=low
+  * Version 1.9.6
+  * Fixing GUI labels and translations.
+
+ -- moma <osmoma@gmail.com>  Fri, 10 Feb 2017 10:00:00  +0200
+
+audio-recorder (1.9.5~zesty) zesty; urgency=low
+  * Version 1.9.5
+  * Bug #1660428. Icons names according to Freedesktop.org.
+
+ -- moma <osmoma@gmail.com>  Thu, 09 Feb 2017 10:00:00  +0200
+
+audio-recorder (1.9.4~yakkety) yakkety; urgency=low
+  * Version 1.9.4
+  * Small updates concerning GTK3+ 3.22
+
+ -- moma <osmoma@gmail.com>  Sun, 15 Jan 2017 10:00:00  +0200
+
+audio-recorder (1.9.3) yakkety; urgency=low
+  * Version 1.9.3
+  * A small update in data/audio-recorder.desktop file.
+
+ -- moma <osmoma@gmail.com>  Fri, 06 Jan 2017 22:00:00  +0200
+
+audio-recorder (1.9.2) yakkety; urgency=low
+  * Version 1.9.2
+  * Removed .bzr from the source ball.
+
+ -- moma <osmoma@gmail.com>  Fri, 06 Jan 2017 12:00:00  +0200
+
+audio-recorder (1.9.1) yakkety; urgency=low
+  * Version 1.9.1
+  * Addressing bug #1653544.
+
+ -- moma <osmoma@gmail.com>  Fri, 06 Jan 2017 10:00:00  +0200
+
+audio-recorder (1.9.0) yakkety; urgency=low
+  * Version 1.9.0
+  * Cleanups in build and configuration files for Debian (by David Rabel) 
+
+ -- David Rabel <David.Rabel@noresoft.com>  Mon, 02 Jan 2017 10:00:00  +0200
+
+audio-recorder (1.8-0~yakkety) yakkety; urgency=low
+  * Version 1.8-0
+  * Recompilation for Ubuntu 16.10. 
+
+ -- moma <osmoma@gmail.com>  Tue, 09 Aug 2016 10:00:00  +0200
+
+audio-recorder (1.7-5~xenial) xenial; urgency=low
+  * Version 1.7-5
+  * Cleanups.
+
+ -- moma <osmoma@gmail.com>  Mon, 28 Sep 2015 10:00:00  +0200
+
+audio-recorder (1.7-4~wily) wily; urgency=low
+  * Version 1.7-4
+  * Fixed bug with long file names. Show correct version number in about dialog.
+
+ -- moma <osmoma@gmail.com>  Fri, 25 Sep 2015 10:00:00  +0200
+
+audio-recorder (1.7-3~wily) wily; urgency=low
+  * Version 1.7-3
+  * Fixed bug with long file names. 
+
+ -- moma <osmoma@gmail.com>  Fri, 25 Sep 2015 10:00:00  +0200
+
+audio-recorder (1.7-2~wily) wily; urgency=low
+
+  * Version 1.7-2
+  * Removed deprecated GLIB 2.46 and GTK 3.16 functions. 
+
+ -- moma <osmoma@gmail.com>  Tue, 01 Sep 2015 10:00:00  +0200
+
+audio-recorder (1.7-1~wily) wily; urgency=low
+
+  * Version 1.7-1
+  * Recompilation for Ubuntu 15.10. No code changes. Some language updates. 
+
+ -- moma <osmoma@gmail.com>  Sun, 31 Aug 2015 10:00:00  +0200
+
+audio-recorder (1.6-5~wily) wily; urgency=low
+
+  * Version 1.6-5
+  * Recompilation for Ubuntu 15.10. No code changes. Some language updates(SP,NO,FR). 
+
+ -- moma <osmoma@gmail.com>  Sun, 30 Aug 2015 10:00:00  +0200
+
+audio-recorder (1.6-4~vivid) vivid; urgency=low
+
+  * Version 1.6-4
+  * GTK3+ has now a standard GtkLevelBar widget. Renamed our 'GtkLevelBar' widget to 'LevelBar'.
+  * Renamed src/gtklevelbar.[ch] to src/levelbar.[ch].
+
+ -- moma <osmoma@gmail.com>  Tue, 11 Apr 2015 10:00:00  +0200
+
+audio-recorder (1.6-4~vivid) vivid; urgency=low
+
+  * Version 1.6-4
+  * Added -e (--eos-on-shutdown) option to the gst-launch command in Additional Settings -> Recording Commands -> Show Cmd.
+  * This will make sure all test files (test recordings) are terminated properly.   
+
+ -- moma <osmoma@gmail.com>  Tue, 17 Mar 2015 10:00:00  +0200
+
+audio-recorder (1.6-2~vivid) vivid; urgency=low
+
+  * Version 1.6-2
+  * audio-recorder --reset did not always work because GSettings registry was not flushed immediately.
+  * I added conf_flush_settings() to dconf.c. This will flush and write the settings to disk at --reset.
+
+ -- moma <osmoma@gmail.com>  Wed, 11 Feb 2015 10:00:00  +0200
+
+audio-recorder (1.6-1~vivid) vivid; urgency=low
+
+  * Version 1.6-1
+  * Some updates in data/timer-syntax.html.
+  * Small changes in settings.c, settings-pipe.c.
+
+ -- moma <osmoma@gmail.com>  Wed, 11 Feb 2015 10:00:00  +0200
+
+audio-recorder (1.6-0~vivid) vivid; urgency=low
+
+  * Version 1.6-0 (for Ubuntu 15.04).
+  * Improved, automatic installation of missing plugins. Configuration (configure.ac) needs now  
+  * gstreamer-pbutils-1.0 library and compilation needs libgstreamer-plugins-base1.0-dev package.
+  * Removed deprecated GTK 3.14 functions. 
+  * Removed support for GtkStatusIcon class in systray-icon.c file (we support only AppIndicator).
+  * Fixed the level-bar widget (for GTK 3.14). User can change the bar style by left/right 
+  * clicking on the widget.  
+  * Handle multiple timer commands better (changes in timer.c). 
+
+ -- moma <osmoma@gmail.com>  Thu, 05 Feb 2015 10:00:00  +0200
+
+audio-recorder (1.5-7~utopic) utopic; urgency=low
+
+  * Version 1.5-7 (merely a re-compilation on the Launchpad.net).
+  * Wrong version number in the About-dialog.
+  * I have re-run; make clean; aclocal && autoconf && automake -a; ./configure to set it right. 
+  * Version number is conveyed from configure.ac.
+  
+ -- moma <osmoma@gmail.com>  thu, 30 Oct 2014 10:00:00  +0200
+
+audio-recorder (1.5-6~utopic) utopic; urgency=low
+
+  * Version 1.5-6
+  * Fixed bug #1386793. Filename was cut off if filename pattern contained a '.'
+  * Some improvements in src/settings-pipe.c.
+
+ -- moma <osmoma@gmail.com>  Wed, 29 Oct 2014 10:00:00  +0200
+-recorder (1.5-5~utopic) utopic; urgency=low
+
+  * Version 1.5-5
+  * Find default (active) audio-card when recording from media-players and Skype.
+  * Some language updates (fr,uk,no,fi).
+
+ -- moma <osmoma@gmail.com>  Tue, 28 Oct 2014 10:00:00  +0200
+
+audio-recorder (1.5-4~utopic) utopic; urgency=low
+
+  * Version 1.5
+  * This version of a.r requires GStreamer 1.4 (check: gst-launch-1.0 --version)
+  * Fixed autostart Bug #1312524 by deleting the file when autostart is set OFF.
+  * Fixed compatibility bug in configure.ac. Ref. Bug #1379339, patched by DimStar.
+  * Removed dependency to libpulse-dev (removed also files; src/pulseaudio.[ch]). 
+  * Using now Gstreamer to get list of audio devices (new files; src/gst-devices.[ch]). 
+  * Notice; Fedora Linux, Arch Linux, etc, please see debian/control file for required and changed dependencies.
+  * New and unplugged devices are detected automatically.  
+  * User can change and add new recording pipelines. Please see [Additional settings] dialog and 
+  * implementation in win-settings-pipe.[ch] module.
+  * Improved MP3-recording with id3mux. Ref. Bug #1354973.
+  * Better error message at missing Gstreamer-plugin. 
+  * Automatic installation of (missing) plugins needs to be completed in next version. 
+
+ -- moma <osmoma@gmail.com>  Wed, 09 Oct 2014 10:00:00  +0200
+
+audio-recorder (1.4-8~utopic) utopic; urgency=low
+
+  * Version 1.4-8. Pre 1.5 !
+  * Removed dependency to libpulse-dev (removed files; src/pulseaudio.[ch]). 
+  * Using now Gstreamer to get the device list (new files; src/gst-devices.[ch]). 
+  * Completed src/win-settings-pipe.[ch] module.
+ 
+ -- moma <osmoma@gmail.com>  Wed, 30 Sep 2014 10:00:00  +0200
+
+audio-recorder (1.4-7~utopic) utopic; urgency=low
+
+  * Version 1.4-7. Pre 1.5 !
+  * audio-recorder/COPYING is now a file, not a link. (ref. Fedora/RedHat).
+  * Updated linux-distros/fedora/readme.txt and audio-recorder.spec (ref. Ron H.)
+  * New option in settings to "keep window on top".
+  * User can now edit/add new media profiles and pipelines for recording (ref. settings-pipe.c). Will come in v1.5!
+  * Renamed src/win-settings.[ch] to src/settings.[ch]. Added src/win-settings-pipe.[ch].
+
+ -- moma <osmoma@gmail.com>  Wed, 24 Sep 2014 10:00:00  +0200
+
+audio-recorder (1.4-5~trusty) trusty; urgency=low
+
+  * Version 1.4-5
+  * Compiling a.r for Ubuntu 14.04. 
+  * Fixed error in data/Makefile.am. 
+  * Schema data/org.gnome.audio-recorder.gschema.xml was not compiled.
+
+ -- moma <osmoma@gmail.com>  Thu, 07 Mar 2014 10:00:00  +0200
+
+audio-recorder (1.4-1~saucy) saucy; urgency=low
+
+  * Version 1.4-1
+  * Bug #1258822 Timer.c does not stop recording in some rare cases.
+  * Changes in timer.c should address this bug.
+
+ -- moma <osmoma@gmail.com>  Mon, 09 Dec 2013 10:00:00  +0200
+
+audio-recorder (1.4~saucy) saucy; urgency=low
+
+  * Version 1.4
+  * Replaced fixed size icons 16x16,...,64x64 with scalable svg images. 
+  * Modified also also pixmap/audio-recorder-off-dot.svg, audio-recorder-on-dot.svg, audio-recorder-paused-dot.svg. 
+
+ -- moma <osmoma@gmail.com>  Fri, 06 Dec 2013 10:00:00  +0200
+
+audio-recorder (1.3-3~saucy) saucy; urgency=low
+
+  * Version 1.3-3
+  * Language updates on Ukrainian(uk) and Chinese Simplified(zh_CN) texts.
+  * Preliminary test on getting device list from GStreamer 1.x instead of PulseAudio.
+  * Note: bumped version to 1.3-3. Build of version 1.3-2 failed.
+
+ -- moma <osmoma@gmail.com>  Sat, 23 Nov 2013 10:00:00  +0200
+
+audio-recorder (1.3-1~saucy) saucy; urgency=low
+
+  * Version 1.3-1
+  * zh_TW translation updates.
+
+ -- moma <osmoma@gmail.com>  Fri, 18 Oct 2013 10:00:00  +0200
+
+audio-recorder (1.3~saucy) saucy; urgency=low
+
+  * Version 1.3
+  * Final release for Ubuntu 13.10 (Saucy Salamander). 
+  * Some new translations.
+
+ -- moma <osmoma@gmail.com>  Fri, 11 Oct 2013 10:00:00  +0200
+
+audio-recorder (1.2~saucy) saucy; urgency=low
+
+  * Version 1.2
+  * First build for Ubuntu 13.10 (Saucy Salamander). 
+  * Renamed configure.in to configure.ac.
+
+ -- moma <osmoma@gmail.com>  Sun, 04 Aug 2013 10:00:00  +0200
+
+audio-recorder (1.1.2~raring) raring; urgency=low
+
+  * Version 1.1.2
+  * Updated audio-recorder.spec file for Fedora 19.
+  * Some language updates from Launchpad.net.
+
+ -- moma <osmoma@gmail.com>  Mon, 22 Jul 2013 10:00:00  +0200
+
+audio-recorder (1.1.1~raring) raring; urgency=low
+
+  * Version 1.1.1
+  * Fixed bug #1159341. Systray icon popped ON after reboot or logout.
+
+ -- moma <osmoma@gmail.com>  Sat, 11 May 2013 10:00:00  +0200
+
+audio-recorder (1.1~raring) raring; urgency=low
+
+  * Version 1.1
+  * Migrated dbus-skype.c to GDBus intrerface.
+  * Removed dependency to dbus-glib-1 library (from configure.in and debian/control).
+  * Removed skype-service.[ch] and skype-service-object-glue.h from the project.
+
+ -- moma <osmoma@gmail.com>  Tue, 08 May 2013 10:00:00  +0200
+
+audio-recorder (1.0~raring) raring; urgency=low
+
+  * Version 1.0
+  * Removed dependency to libgnome-media-profiles library (media-profiles.c).
+  * Fixed bug #1074928 on Arch-Linux. Couldn`t find configuration values in dconf.
+  * See function conf_get_base_settings() in src/dconf.c.
+  * Getting player name and executable from player's .desktop file.
+
+ -- moma <osmoma@gmail.com>  Thu, 21 Mar 2013 10:00:00  +0200
+
+audio-recorder (0.9.9~quantal) quantal; urgency=low
+
+  * Version 0.9.9
+
+ -- moma <osmoma@gmail.com>  Sat, 01 Dec 2012 10:00:00  +0200
+
+audio-recorder (0.9.8~quantal) quantal; urgency=low
+
+  * Version 0.9.8
+  * Fixed bug #1074928. Audio-recorder could not find configuration values (in dconf) and exited. 
+
+ -- moma <osmoma@gmail.com>  Sun, 04 Nov 2012 10:00:00  +0200
+
+audio-recorder (0.9.7~quantal) quantal; urgency=low
+
+  * Version 0.9.7
+  * A.r will now remember lastly used media-players (dbus-player.c).
+  * New/changed key in data/org.gnome.audio-recorder.gschema.xml.
+
+ -- moma <osmoma@gmail.com>  Thu, 28 Oct 2012 10:00:00  +0200
+
+audio-recorder (0.9.6~quantal) quantal; urgency=low
+
+  * Version 0.9.6
+
+ -- moma <osmoma@gmail.com>  Fri, 19 Oct 2012 14:00:00  +0200
+
+audio-recorder (0.9.5~quantal) quantal; urgency=low
+
+  * Version 0.9.5
+  * Moving to Gstreamer 1.0.
+
+ -- moma <osmoma@gmail.com>  Fri, 19 Oct 2012 10:00:00  +0200
+
+audio-recorder (0.9.4~quantal) quantal; urgency=low
+
+  * Version 0.9.4
+  * Removed remaining deprecated functions from the code. Full GTK3 support.
+
+ -- moma <osmoma@gmail.com>  Mon, 01 Oct 2012 10:00:00  +0200
+
+audio-recorder (0.9.3~quantal) quantal; urgency=low
+
+  * Version 0.9.3
+  * Upgrade for Ubuntu 12.10 and F18. Improved timer and VAD-modules. Better gst-pipeline.
+
+ -- moma <osmoma@gmail.com>  Sun, 30 Sep 2012 10:00:00  +0200
+
+audio-recorder (0.9.1~precise) precise; urgency=low
+
+  * Version 0.9.1
+  * Improved MPRIS2 interface. VLC media player should now work with ar. 
+
+ -- moma <osmoma@gmail.com>  Thu, 26 Apr 2012 10:00:00  +0200
+
+audio-recorder (0.9~precise) precise; urgency=low
+
+  * Version 0.9
+  * MPRIS2 compliant media-player interface (dbus-mpris2.c)
+  * Removed fixed icons. Icons are now loaded from the current theme.  
+
+ -- moma <osmoma@gmail.com>  Sat, 22 Apr 2012 10:00:00  +0200
+
+audio-recorder (0.8.2~precise) precise; urgency=low
+
+  * Version 0.8.2
+  * Set right version number in .deb package.
+
+ -- moma <osmoma@gmail.com>  Mon, 04 Apr 2012 10:00:00  +0200
+
+audio-recorder (0.8.1~precise) precise; urgency=low
+
+  * Version 0.8.1
+  * Updated timer-syntax.html.
+
+ -- moma <osmoma@gmail.com>  Mon, 02 Apr 2012 11:00:00  +0200
+
+audio-recorder (0.8~precise) precise; urgency=low
+
+  * Version 0.8
+  * New, improved widget for the level bar.
+
+ -- moma <osmoma@gmail.com>  Mon, 02 Apr 2012 10:00:00  +0200
+
+audio-recorder (0.7~precise) precise; urgency=low
+
+  * Version 0.7
+  * Updated code for Fedora 16 and Ubuntu 12.04.
+  * Uses now GTK 3 libraries.
+
+ -- moma <osmoma@gmail.com>  Fri, 30 Mar 2012 08:00:00  +0200
+
+audio-recorder (0.6.2~oneiric) oneiric; urgency=low
+
+  * Version 0.6.2
+  * Fixing typo in debian/control file.
+  * Needs libappindicator3-dev instead of libappindicator-dev.
+
+ -- moma <osmoma@gmail.com>  Mon, 26 Sep 2011 16:00:00  +0200
+
+audio-recorder (0.6.1~oneiric) oneiric; urgency=low
+
+  * Version 0.6.1
+  * Fixing debian/control file.
+  * It seems that "libgnome-media-profiles-dev" (in Ubuntu 11.10 beta) still requires the "libgconf2-dev" package.
+  * I hope they will remove this dependency. But for now, add libgconf2-dev.
+
+ -- moma <osmoma@gmail.com>  Mon, 26 Sep 2011 15:00:00  +0200
+
+audio-recorder (0.6~oneiric) oneiric; urgency=low
+
+  * 26.september.2011 Version 0.6.
+  * Ported this application to GTK 3/GDK 3.
+  * Using now GSettings (and dconf) instead of GConf2.
+
+ -- moma <osmoma@gmail.com>  Mon, 26 Sep 2011 12:00:00  +0200
+
+audio-recorder (0.5.1~oneiric) oneiric; urgency=low
+
+  * 19.september.2011 Version 0.5.1.
+  * Small bug-fixes and changes in version 0.5.
+
+ -- moma <osmoma@gmail.com>  Mon, 19 Sep 2011 15:30:00  +0200
+
+audio-recorder (0.5~oneiric) oneiric; urgency=low
+
+  * 18.september.2011 Version 0.5
+  * Added simple DBus-service so recorder can be controlled from command line or other applications.
+  * See audio-recorder --help.
+  * Added support for Unity's launcher icon. audio-recorder.desktop file contains now static menu items 
+  * for "start recording", "stop recording", "pause" and "show window".
+
+ -- moma <osmoma@gmail.com>  Sun, 18 Sep 2011 23:10:00  +0200
+
+audio-recorder (0.4.4~maverick) maverick; urgency=low
+
+  * 21.march.2011 Version 0.4.4
+  * "About..." menu does not work right if started from AppIndicator (systray) menu.
+  * Hide "About..." menu if AppIndicators library present.
+
+ -- moma <osmoma@gmail.com>  Mon, 21 Mar 2011 10:00:00  +0200
+
+audio-recorder (0.4.1~natty) natty; urgency=low
+
+  * 19.march.2011 Version 0.4.1
+  * Removed package requirement (libappindicator-dev) from Ubuntu 10.10.
+
+ -- moma <osmoma@gmail.com>  Sat, 19 Mar 2011 14:04:15  +0200
+
+audio-recorder (0.4~natty) natty; urgency=low
+
+  * 18.march.2011 Version 0.4.
+  * Ability to record from multiple devices simultaneously, to a single file.
+
+ -- moma <osmoma@gmail.com>  Thu, 18 Mar 2011 14:04:15  +0200
+
+audio-recorder (0.3~natty) natty; urgency=low
+
+  * 08.feb.2011 Version 0.3.
+  * Renamed rec-applet to audio-recorder.
+  * Added new features.
+
+ -- moma <osmoma@gmail.com>  Tue, 05 Oct 2010 10:59:32  +0200
+
+rec-applet (0.2-0~maverick) maverick; urgency=low
+
+  * Initial Release.
+
+ -- moma <osmoma@gmail.com>  Thu, 17 Aug 2010 08:00:00 +0200
+

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Team audio-recorder.
+ * Copyright (c) 2011-2017 Osmo Antero.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public

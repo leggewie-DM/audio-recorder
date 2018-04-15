@@ -6,7 +6,7 @@ spesific dbus-banshee.c module. It has been removed from the source.
 Audio-recorder can communicate with Banshee by using the dbus-mpris2.[ch] and dbus-player.[ch] modules.
 ---------------------------------
 
-Older Banshee-interface:
+The older, obsolete Banshee-interface:
 
 Interacting with Banshee over DBus/GLib.
 We need to create a marshalling function so we can receive correct data types from DBus/Banshee.

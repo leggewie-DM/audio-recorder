@@ -1,3 +1,20 @@
+2017-10-21  Osmo Antero <osmoma@gmail.com>
+  * Version 2.0.2
+  * Removed unnecessary files from the source. 
+
+2017-10-05  Osmo Antero <osmoma@gmail.com>
+  * Version 2.0.1
+  * Legalizing for Debian. Set a proper copyright text in all source files.
+
+2017-09-16  Osmo Antero <osmoma@gmail.com>
+  * Version 2.0.0
+  * Recompiling for Ubuntu 17.10 and other major distros released in October-2017.
+
+2017-09-16  Osmo Antero <osmoma@gmail.com>
+  * Version 1.9.8
+  * Some language updates.	
+  * Recompiling for Ubuntu 17.10 and other major distros released in October-2017.
+
 2017-02-15  Osmo Antero <osmoma@gmail.com>
   * Version 1.9.7
   * Minor translation updates.
