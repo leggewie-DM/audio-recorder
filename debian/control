@@ -1,8 +1,7 @@
 Source: audio-recorder
 Section: utils
 Priority: optional
-Maintainer: David Rabel <david.rabel@noresoft.com>
-Uploaders: Rolf Leggewie <foss@rolf.leggewie.biz>
+Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
 Build-Depends:
  debhelper (>= 9),
  dh-autoreconf,
