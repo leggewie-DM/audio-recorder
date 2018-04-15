@@ -1,6 +1,0 @@
-audio-recorder for Debian
-------------------------
-
-The original source tarball contained a debian directory. I deleted it to obtain a pristine tarball.
-
- -- David Rabel <david.rabel@noresoft.com>  Sun, 08 Jan 2017 13:50:15 +0100
