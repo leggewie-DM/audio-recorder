@@ -2,8 +2,8 @@
 # Contributor: Lucas Saliés Brum <lucas@archlinux.com.br>
 
 pkgname=audio-recorder
-pkgver=1.9.7
-pkgrel=7
+pkgver=2.0.2
+pkgrel=2
 pkgdesc="Audio recorder for GNOME and Unity Desktops"
 arch=('i686' 'x86_64')
 url='https://launchpad.net/audio-recorder'
@@ -19,7 +19,7 @@ optdepends=('pulseaudio: for extended recording capabilities'
 provides=('audio-recorder')
 install="$pkgname.install"
 conflicts=('audio-recorder-bzr' 'audio-recorder-from-deb')
-source=("https://launchpad.net/$pkgname/trunk/version1.9.7/+download/$pkgname-1.9.7.tar.gz")
+source=("https://launchpad.net/$pkgname/trunk/version2.0.2/+download/$pkgname-2.0.2.tar.gz")
 md5sums=('??????')
 
 build() {

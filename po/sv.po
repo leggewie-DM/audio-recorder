@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: audio-recorder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"POT-Creation-Date: 2017-10-21 14:05+0100\n"
 "PO-Revision-Date: 2017-02-11 14:09+0000\n"
 "Last-Translator: moma <osmoma@gmail.com>\n"
 "Language-Team: Swedish\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
-"Language: sv\n"
+"X-Launchpad-Export-Date: 2017-10-13 05:25+0000\n"
+"X-Generator: Launchpad (build 18474)\n"
 
 #: ../src/about.c:70
 msgid ""
@@ -101,7 +101,7 @@ msgstr "Skype-samtal"
 msgid "Call from %s to %s %s"
 msgstr "Samtal från %s till %s %s"
 
-#: ../src/gst-vad.c:327 ../src/gst-recorder.c:835
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:836
 msgid "Cannot start reading from the stream/pipeline.\n"
 msgstr "Kan inte starta läsning från strömmen/ljudledningen.\n"
 
@@ -110,24 +110,24 @@ msgstr "Kan inte starta läsning från strömmen/ljudledningen.\n"
 #: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
 #: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
 #: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
-#: ../src/gst-recorder.c:850
+#: ../src/gst-recorder.c:851
 #, c-format
 msgid "Cannot create audio pipeline. %s.\n"
 msgstr "Kan inte skapa ljudledning. %s.\n"
 
 #. Set err_msg
-#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:800
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:801
 #, c-format
 msgid "Cannot find audio element %s.\n"
 msgstr "Kan inte hitta ljudelementet %s.\n"
 
-#: ../src/gst-recorder.c:251
+#: ../src/gst-recorder.c:252
 #, c-format
 msgid "Cannot write to file \"%s\".\n"
 msgstr "Kan inte skriva till filen \"%s\".\n"
 
 #. File name not given, set it to "Some filename"
-#: ../src/gst-recorder.c:959
+#: ../src/gst-recorder.c:960
 msgid "Some filename"
 msgstr "Något filnamn"
 
@@ -167,13 +167,13 @@ msgstr "Lista värden för signalnivåer i ett terminalfönster."
 
 #: ../src/main.c:104
 msgid ""
-"Send a command to the recorder. Valid commands are; "
-"status,start,stop,pause,show,hide and quit. The status argument returns; "
-"'not running','on','off' or 'paused'."
+"Send a command to the recorder. Valid commands are; status,start,stop,pause,"
+"show,hide and quit. The status argument returns; 'not running','on','off' or "
+"'paused'."
 msgstr ""
-"Skicka ett kommando till inspelaren. Giltiga kommandon är; "
-"status,start,stop,pause,show,hide och quit. Statusargumentet returnerar; "
-"'not running','on','off' eller 'paused'."
+"Skicka ett kommando till inspelaren. Giltiga kommandon är; status,start,stop,"
+"pause,show,hide och quit. Statusargumentet returnerar; 'not "
+"running','on','off' eller 'paused'."
 
 #. Translators: This is a button label, also used in the menu.
 #. Stop recording.

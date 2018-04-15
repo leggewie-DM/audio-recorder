@@ -1,7 +1,7 @@
-%define releasenum 7
+%define releasenum 2
 
 Name: audio-recorder
-Version: 1.9
+Version: 2.0
 Release: %{releasenum}%{?dist} 
 Summary: Recording applet for your GNOME panel.
 

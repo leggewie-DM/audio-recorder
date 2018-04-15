@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Team audio-recorder.
+ * Copyright (c) 2011-2017 Osmo Antero.
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -33,7 +33,7 @@ void about_show_installation_info_cb(GtkWidget *widget, GdkEvent *event, gpointe
 gchar *about_get_installation_details();
 
 // Contributors should edit these variables
-const gchar *AUTHORS[] = {"Team Audio Recorder", NULL};
+const gchar *AUTHORS[] = {"Osmo Antero", "Team Audio Recorder", NULL};
 
 const gchar *DOCUMENTERS[] = {"", NULL};
 
@@ -95,7 +95,7 @@ void about_this_app() {
     g_free(package_name);
 
     gtk_about_dialog_set_version(g_dialog, PACKAGE_VERSION);
-    gtk_about_dialog_set_copyright(g_dialog, "Team Audio Recorder");
+    gtk_about_dialog_set_copyright(g_dialog, AUTHORS[0]);
 
     // Show the English name ("Audio Recorder")
     gtk_about_dialog_set_comments(g_dialog, PACKAGE_NAME);

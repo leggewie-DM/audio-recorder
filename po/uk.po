@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rec-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-14 20:18+0000\n"
+"POT-Creation-Date: 2017-10-21 14:05+0100\n"
 "PO-Revision-Date: 2015-05-29 11:41+0000\n"
-"Last-Translator: Микола Ткач <Stuartlittle1970@gmail.com>\n"
+"Last-Translator: stuartlittle <Stuartlittle1970@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-15 06:00+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
-"Language: uk\n"
+"X-Launchpad-Export-Date: 2017-10-13 05:25+0000\n"
+"X-Generator: Launchpad (build 18474)\n"
 
 #: ../src/about.c:70
 msgid ""
@@ -28,8 +28,8 @@ msgstr ""
 #: ../src/about.c:71
 msgid "Please see http://www.gnu.org/licenses/gpl-3.0.txt for more details."
 msgstr ""
-"За більш докладною інформацією будь ласка перегляньте "
-"http://www.gnu.org/licenses/gpl-3.0.txt"
+"За більш докладною інформацією будь ласка перегляньте http://www.gnu.org/"
+"licenses/gpl-3.0.txt"
 
 #. Add the button
 #. Show dialog with [Installation details]
@@ -103,7 +103,7 @@ msgstr "Дзвінки Skype"
 msgid "Call from %s to %s %s"
 msgstr "Дзвінок від %s до %s %s"
 
-#: ../src/gst-vad.c:327 ../src/gst-recorder.c:835
+#: ../src/gst-vad.c:327 ../src/gst-recorder.c:836
 msgid "Cannot start reading from the stream/pipeline.\n"
 msgstr "Неможливо почати читання з потоку.\n"
 
@@ -112,24 +112,24 @@ msgstr "Неможливо почати читання з потоку.\n"
 #: ../src/gst-pipeline.c:201 ../src/gst-pipeline.c:220
 #: ../src/gst-pipeline.c:328 ../src/gst-pipeline.c:375
 #: ../src/gst-pipeline.c:438 ../src/gst-pipeline.c:487
-#: ../src/gst-recorder.c:850
+#: ../src/gst-recorder.c:851
 #, c-format
 msgid "Cannot create audio pipeline. %s.\n"
 msgstr "Неможливо створити звуковий конвейєр. %s.\n"
 
 #. Set err_msg
-#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:800
+#: ../src/gst-pipeline.c:448 ../src/gst-recorder.c:801
 #, c-format
 msgid "Cannot find audio element %s.\n"
 msgstr "Неможливо знайти аудіо елемент %s.\n"
 
-#: ../src/gst-recorder.c:251
+#: ../src/gst-recorder.c:252
 #, c-format
 msgid "Cannot write to file \"%s\".\n"
 msgstr "Не вдається записати у файл \"%s\".\n"
 
 #. File name not given, set it to "Some filename"
-#: ../src/gst-recorder.c:959
+#: ../src/gst-recorder.c:960
 msgid "Some filename"
 msgstr "Ім'я файлу"
 
@@ -171,9 +171,9 @@ msgstr "Показати значення рівня сигналу в вікн�
 
 #: ../src/main.c:104
 msgid ""
-"Send a command to the recorder. Valid commands are; "
-"status,start,stop,pause,show,hide and quit. The status argument returns; "
-"'not running','on','off' or 'paused'."
+"Send a command to the recorder. Valid commands are; status,start,stop,pause,"
+"show,hide and quit. The status argument returns; 'not running','on','off' or "
+"'paused'."
 msgstr ""
 "Відправити команду. Доступні команди: status,start,stop,pause,show,hide та "
 "quit. Аргумент status повертає наступні значення: 'not running','on','off' "

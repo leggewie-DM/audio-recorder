@@ -1,5 +1,5 @@
 # ================= initialization =================== #
-AC_INIT([Audio Recorder],[1.9.7],[https://bugs.launchpad.net/~audio-recorder],[audio-recorder])
+AC_INIT([Audio Recorder], [2.0.2], [https://bugs.launchpad.net/~audio-recorder], [audio-recorder])
 AM_INIT_AUTOMAKE
 
 AC_USE_SYSTEM_EXTENSIONS
