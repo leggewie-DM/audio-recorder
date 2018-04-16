@@ -15,8 +15,8 @@ Build-Depends:
  libgtk-3-dev,
  pkg-config
 Standards-Version: 3.9.8
-Vcs-Git: https://github.com/NoreSoft/audio-recorder.git
-Vcs-Browser: https://github.com/NoreSoft/audio-recorder
+Vcs-Browser: https://github.com/leggewie-DM/audio-recorder
+Vcs-Git: https://github.com/leggewie-DM/audio-recorder.git
 Homepage: https://launchpad.net/audio-recorder
 
 Package: audio-recorder
